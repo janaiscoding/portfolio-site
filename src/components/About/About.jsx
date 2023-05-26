@@ -1,10 +1,10 @@
 import React from "react";
 import Heading from "../UI_elements/Heading";
-import Mission from "./Mission";
-import Hobbies from "./Hobbies";
-import Values from "./Values";
-import Skills from "./Skills";
-import Button from "../UI_elements/Button";
+import Mission from "./aboutCards/Mission";
+import Hobbies from "./aboutCards/Hobbies";
+import Values from "./aboutCards/Values";
+import Skills from "./aboutSkills/Skills";
+import Button from "../Button/Button";
 
 const About = () => {
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ArrowRight from "../../assets/Arrow.png";
-import "../../styles/arrow.css";
+import ArrowRight from "../../assets/Icons/Arrow.png";
+import "./arrow.css";
 
 const Button = ({ content }) => {
   const [hovered, setHovered] = useState(false);

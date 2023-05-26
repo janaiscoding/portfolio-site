@@ -1,5 +1,5 @@
 import React from "react";
-import Subheading from "../UI_elements/Subheading";
+import Subheading from "../../UI_elements/Subheading";
 const Values = () => {
   return (
     <div className="shadow-md p-4">

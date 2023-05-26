@@ -9,6 +9,3 @@
 button{
   transition: 150ms all ease;
 }
-button:hover{
-  transform: scale(1.01);
-}

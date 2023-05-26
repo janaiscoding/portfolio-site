@@ -1,5 +1,5 @@
 import React from "react";
-import '../../styles/icon.css'
+import './icon.css'
 const Icon = ({ url, name }) => {
   return (
     <div className="flex gap-4 justify-between items-end p-2 icon">

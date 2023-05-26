@@ -23,113 +23,68 @@
 body {
   background-color: #f8f7f7;
 }
-/* NAVIGATION ON MOBILE*/
-.mobile-nav {
-  position: fixed;
-  z-index: 40;
-  top: -100%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  background-color: hsla(193, 57%, 41%, 0.98);
+.easeInFromLeft {
+  animation: fadeInFromLeft 1.2s ease-in normal forwards;
 }
 
-.showNav {
-  -webkit-animation: showNav 1s ease forwards;
-  -moz-animation: showNav 1s ease forwards;
-  -o-animation: showNav 1s ease forwards;
-  animation: showNav 1s ease forwards;
-}
-@keyframes showNav {
-  from {
-    top: -100%;
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-100vw, 0vh);
   }
-  to {
-    top: 0;
+  30% {
+    opacity: 0.1;
   }
-}
 
-@-webkit-keyframes showNav {
-  from {
-    top: -100%;
-  }
-  to {
-    top: 0;
+  100% {
+    opacity: 1;
   }
 }
+.easeInFromRight {
+  animation: fadeInFromRight 1.2s ease-in normal forwards;
+}
+@keyframes fadeInFromRight {
+  0% {
+    opacity: 0;
+    transform: translate(100vh, 0vh);
+  }
+  30% {
+    opacity: 0.1;
+  }
 
-@-moz-keyframes showNav {
-  from {
-    top: -100%;
-  }
-  to {
-    top: 0;
+  100% {
+    opacity: 1;
   }
 }
+.easeInFromBottom {
+  animation: fadeInFromBottom 1.5s ease-in normal forwards;
+}
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translate(0vh, 100vh);
+  }
+  30% {
+    opacity: 0.1;
+  }
 
-@-o-keyframes showNav {
-  from {
-    top: -100%;
-  }
-  to {
-    top: 0;
+  100% {
+    opacity: 1;
   }
 }
-@keyframes hideNav {
-  from {
-    top: 0;
-  }
-  to {
-    top: -100%;
-  }
+.easeInFromTop {
+  animation: fadeInFromTop 1.8s ease-in normal forwards;
 }
+@keyframes fadeInFromTop {
+  0% {
+    opacity: 0;
+    transform: translate(0vh, -100vh);
+  }
+  30% {
+    opacity: 0.1;
+  }
 
-@-webkit-keyframes hideNav {
-  from {
-    top: 0;
+  100% {
+    opacity: 1;
   }
-  to {
-    top: -100%;
-  }
-}
-
-@-moz-keyframes hideNav {
-  from {
-    top: 0;
-  }
-  to {
-    top: -100%;
-  }
-}
-
-@-o-keyframes hideNav {
-  from {
-    top: 0;
-  }
-  to {
-    top: -100%;
-  }
-}
-
-.hideNav {
-  -webkit-animation: hideNav 1s ease forwards;
-  -moz-animation: hideNav 1s ease forwards;
-  -o-animation: hideNav 1s ease forwards;
-  animation: hideNav 1s ease forwards;
-}
-
-/*PARALLAX*/
-.parallax {
-  position: relative;
-}
-.parallax__layer {
-
-}
-.parallax__layer--base {
-  transform: translateZ(0);
-}
-.parallax__layer--back {
-  position: fixed;
-  transform: translateZ(-1px) scale(2);
 }
