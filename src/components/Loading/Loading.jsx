@@ -1,9 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect, Dispatch, SetStateAction } from "react";
 import gsap from "gsap";
 import SplitType from "split-type";
 import "./loading.css";
 
-const Loading = ({ setDone }) => {
+interface LoadingProps {
+  setDone: Dispatch<SetStateAction<boolean>>;
+}
+
+const Loading: React.FC<LoadingProps> = ({ setDone }) => {
   useEffect(() => {
     const myText = new SplitType("#myText");
     gsap.to(".char", {

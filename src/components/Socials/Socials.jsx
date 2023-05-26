@@ -1,5 +1,6 @@
 import React from "react";
 import './socials.css'
+
 const Socials = () => {
   return (
     <div className="hidden md:flex flex-col gap-4 fixed top-[50%] p-3 left-[0%] socials easeInFromLeft">

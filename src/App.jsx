@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Loading from "./components/Loading/Loading";
 import Socials from "./components/Socials/Socials";
+import Banner from "./components/Hero/Banner";
 
 const App = () => {
   const [done, setDone] = useState(undefined);
@@ -16,6 +17,7 @@ const App = () => {
         <>
           <Navbar />
           <Hero />
+          <Banner />
           <About />
           <Socials />
         </>

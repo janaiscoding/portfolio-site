@@ -3,7 +3,7 @@ import Profile from "../../assets/jana-istrate.webp";
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
 
-const Hero = () => {
+const Hero: React.FC = () => {
   useEffect(() => {
     let handleScroll = () => {
       let slowDiv = document.querySelector(".slowDiv");

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import ArrowRight from "../../assets/Icons/Arrow.png";
 import "./arrow.css";
-
-const Button = ({ content }) => {
+interface ButtonProps {
+  content: string;
+}
+const Button: React.FC<ButtonProps> = ({ content }) => {
   const [hovered, setHovered] = useState(false);
   return (
     <button

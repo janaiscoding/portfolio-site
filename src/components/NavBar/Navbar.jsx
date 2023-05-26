@@ -6,10 +6,10 @@ import "./navbar.css";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [initial, setInitial] = useState(true);
-  const lottieRef = useRef();
+  const lottieRef = useRef()
   const handleLottie = () => {
     //if modal is open, it means that i am reversing the direction when I close it
-    if (isOpen) {
+    if (isOpen && lottieRef.current) {
       lottieRef.current.setDirection(-1);
       lottieRef.current.play();
       setIsOpen(false);
@@ -21,7 +21,9 @@ const Navbar = () => {
     }
   };
   useEffect(() => {
-    lottieRef.current.stop();
+   
+      lottieRef.current.stop();
+   
   }, []);
   return (
     <header className="flex justify-between items-center px-6 h-14 md:max-w-[1200px] md:mx-auto">
