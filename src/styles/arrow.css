@@ -1,18 +1,14 @@
 /* ARROW ANIMATION */
-svg.hover-arrow {
-  height: 22px;
-  width: 60px;
+.hover-arrow {
   transition: 250ms all ease;
-  cursor: pointer;
-  display: flex;
 }
-svg.hover-arrow path {
+.hover-arrow:hover {
   transition: 250ms all ease;
-  height: 100%;
-}
-svg.hover-arrow:hover {
   opacity: 1;
 }
-p {
-  transition: 250ms all ease;
+button{
+  transition: 150ms all ease;
+}
+button:hover{
+  transform: scale(1.01);
 }

@@ -23,7 +23,7 @@ const Navbar = () => {
     lottieRef.current.stop();
   }, []);
   return (
-    <header className="flex justify-between items-center bg-white px-6 h-14 shadow-md">
+    <header className="flex justify-between items-center px-6 h-14 md:max-w-[1300px] md:mx-auto">
       <h1 className="font-overpass text-2xl tracking-wider align-baseline">
         JanaIsCoding
       </h1>

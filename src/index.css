@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
   font-family: "Overpass-Regular";
   src: url("./assets/fonts/Overpass/Overpass-Regular.ttf");
@@ -21,9 +22,7 @@
 
 body {
   background-color: #f8f7f7;
-  min-height: 90vh;
 }
-
 /* NAVIGATION ON MOBILE*/
 .mobile-nav {
   position: fixed;
@@ -120,20 +119,17 @@ body {
   animation: hideNav 1s ease forwards;
 }
 
-/* ARROW ANIMATION */
-svg.hover-arrowsvg {
-  height: 22px;
-  width: 60px;
-  opacity: 0.5;
-  transition: 250ms all ease;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  path {
-    transition: 250ms all ease;
-    height: 100%;
-  }
-  &:hover {
-    opacity: 1;
-  }
+/*PARALLAX*/
+.parallax {
+  position: relative;
+}
+.parallax__layer {
+
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  position: fixed;
+  transform: translateZ(-1px) scale(2);
 }

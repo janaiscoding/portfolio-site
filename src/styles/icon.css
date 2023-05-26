@@ -1,0 +1,14 @@
+.icon {
+  filter: grayscale(80%) contrast(1);
+  background-color: #cdcdcd;
+  color: hsla(0, 0%, 30%, 1);
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+}
+.icon:hover {
+  cursor: pointer;
+  transform: translateY(-5px) scale(1.2);
+  filter: grayscale(0%);
+  color: white;
+  background-color: #1f2f3c;
+}
