@@ -11,7 +11,6 @@ const Icon = ({ url, name }) => {
         height={28}
         alt={`${name} Icon`}
         title={name}
-        className="hover:cursor-pointer"
       />
       <p className="font-overpass600 text-center">{name}</p>
     </div>

@@ -3,8 +3,10 @@ import Heading from "../UI_elements/Heading";
 import Skills from "./aboutSkills/Skills";
 import { useInView } from "react-intersection-observer";
 import { useAnimation, motion } from "framer-motion";
-import WatermarkBottom from "../UI_elements/WMBottom";
-import WatermarkTop from "../UI_elements/WMTop";
+import WatermarkTopDesktop from "../UI_elements/WMTopDesktop";
+import WatermarkTopMobile from "../UI_elements/WMTopMobile";
+import WatermarkBottomDesktop from "../UI_elements/WMBottomDesktop";
+import WatermarkBottomMobile from "../UI_elements/WMBottomMobile";
 const fromLeft = {
   visible: {
     opacity: 1,
@@ -17,33 +19,14 @@ const fromLeft = {
     transition: { duration: 1 },
   },
 };
-const fromLeftWatermark = {
-  visible: {
-    x: 0,
-    transition: { duration: 1 },
-  },
-  hidden: {
-    x: -100,
-    transition: { duration: 1 },
-  },
-};
-const fromRightWatermark = {
-  visible: {
-    x: 0,
-    transition: { duration: 1 },
-  },
-  hidden: {
-    x: 100,
-    transition: { duration: 1 },
-  },
-};
 
 const About = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
   useEffect(() => {
-    inView ? controls.start("visible") : controls.start("hidden");
-    console.log(inView, "about");
+    if (inView) {
+      controls.start("visible");
+    }
   }, [controls, inView]);
   return (
     <div
@@ -51,12 +34,17 @@ const About = () => {
       id="about"
       ref={ref}
     >
-      <WatermarkTop
+      <WatermarkTopDesktop
         title={"AboutMe onRead={()=>setImpressed(true)}"}
-        top={"15%"}
+        top={"5%"}
         left={"10%"}
       />
-      <section className="flex flex-col gap-6 px-6 md:flex-row md:justify-between md:max-w-6xl md:mx-auto md:gap-40 md:py-[30vh]">
+      <WatermarkTopMobile
+        title={"AboutMe onRead={()=>setImpressed(true)}"}
+        top={"5%"}
+        left={"5%"}
+      />
+      <section className="flex flex-col gap-6 px-6 md:flex-row md:justify-between md:max-w-6xl md:mx-auto md:gap-40 py-[20vh] md:py-[30vh]">
         <motion.div
           animate={controls}
           variants={fromLeft}
@@ -76,8 +64,8 @@ const About = () => {
               put my mind to anything!
             </p>
             <p>
-              When I am not coding, I love to spend my time simply by working
-              out or enjoying a good movie.?? relevancy ??
+              So why pick me? Because I'm striving for
+              perfection, looking to make a difference and just wanna get *&!# done!
             </p>
           </section>
           {/* <div className="self-start">
@@ -87,7 +75,8 @@ const About = () => {
         <Skills inView={inView} />
       </section>
 
-      <WatermarkBottom title={"AboutMe"} top={"85%"} left={"68%"} />
+      <WatermarkBottomDesktop title={"AboutMe"} top={"85%"} left={"68%"} />
+      <WatermarkBottomMobile title={"AboutMe"} top={"90%"} left={"45%"} />
     </div>
   );
 };

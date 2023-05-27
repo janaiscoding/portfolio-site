@@ -49,5 +49,10 @@ const mySkills = [
     name: "VSCode",
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
   },
+  {
+    id: 11,
+    name: "Figma",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+  },
 ];
 export default mySkills;

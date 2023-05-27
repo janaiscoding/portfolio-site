@@ -4,6 +4,7 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "./hero.css";
 import HashButton from "../Button/HashButton";
+import Socials from "../Socials/Socials";
 const fromLeft = {
   visible: {
     opacity: 1,
@@ -33,8 +34,9 @@ const Hero = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
   useEffect(() => {
-    inView ? controls.start("visible") : controls.start("hidden");
-    console.log(inView, "hero");
+    if (inView) {
+      controls.start("visible");
+    }
     let handleScroll = () => {
       let slowDiv = document.querySelector(".slowDiv");
       let value = window.scrollY;
@@ -50,7 +52,7 @@ const Hero = () => {
   return (
     <div className="home md:h-screen overflow-hidden">
       <div
-        className="flex flex-col items-start px-6 gap-6 md:flex-row md:justify-between md:max-w-6xl md:mx-auto md:mt-[10vh]"
+        className="flex flex-col items-start px-6 mt-6 gap-6 md:flex-row md:justify-between md:max-w-6xl md:mx-auto md:mt-[10vh]"
         ref={ref}
       >
         <motion.div
@@ -68,7 +70,7 @@ const Hero = () => {
           <h3 className="font-poppins500 text-grey text-2xl">
             I build elegant things for the web.
           </h3>
-          <p className="font-poppins300 text-black text-base mb-4 md:w-[70%]">
+          <p className="font-poppins300 text-black text-base my-4 md:w-[70%]">
             I’m a highly driven Front-end Developer who is dedicated, passionate
             and eager to create{" "}
             <span className="font-poppins500 italic text-blue">

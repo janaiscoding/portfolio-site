@@ -27,8 +27,3 @@ body {
   background-color: #f8f7f7;
 }
 
-ul > li + li {
-  margin-left: 5px;
-  padding-left: 5px;
-  border-left: 2px solid #58656570;
-}

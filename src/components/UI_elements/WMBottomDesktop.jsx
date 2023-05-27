@@ -13,7 +13,7 @@ const fromRightWatermark = {
   },
 };
 
-const WatermarkBottom = ({ title, top, left }) => {
+const WatermarkBottomDesktop = ({ title, top, left }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
   useEffect(() => {
@@ -27,11 +27,11 @@ const WatermarkBottom = ({ title, top, left }) => {
       initial="hidden"
       variants={fromRightWatermark}
       style={{top: top, left: left}}
-      className={`absolute  font-overpass600 text-4xl text-black opacity-20`}
+      className={` hidden absolute md:block font-overpass600 text-4xl text-black opacity-20 overflow-hidden`}
     >
       {` </ ${title}>`}
     </motion.div>
   );
 };
 
-export default WatermarkBottom;
+export default WatermarkBottomDesktop;

@@ -1,23 +1,36 @@
 import React, { useState } from "react";
-import ArrowRight from "../../assets/Icons/Arrow.png";
 import "./arrow.css";
 import { Link } from "react-router-dom";
+import upArrow from "./up-right-arrow.png";
+import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Button = ({ content, linkTo }) => {
+const Button = ({ content, linkTo, selector }) => {
   const [hovered, setHovered] = useState(false);
   return (
     <Link
       to={linkTo}
-      className={`flex items-center border-2 border-blue p-2 gap-2 mt-6`}
+      target="_blank"
+      rel="noreferrer"
+      className={`flex items-center border-2 border-blue p-2 gap-2 mt-6 hover-arrow ${
+        hovered ? "scale-105" : ""
+      }`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
       <p className={`font-poppins300 text-base tracking-tight`}>{content}</p>
-      <img
-        src={ArrowRight}
-        className={`w-max h-max hover-arrow ${hovered ? "translate-x-1" : ""}`}
-        alt="arrow right indicator"
-      />
+      {selector === "github" ? (
+        <img
+          src={
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+          }
+          width={24}
+          height={24}
+          alt="icon"
+        />
+      ) : (
+        <FontAwesomeIcon icon={icon({ name: "arrow-up-right-from-square" })} />
+      )}
     </Link>
   );
 };

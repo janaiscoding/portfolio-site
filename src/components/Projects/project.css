@@ -1,29 +1,32 @@
 ul > li + li {
-  margin-left: 5px;
-  padding-left: 5px;
   border-left: 2px solid #58656570;
+  padding-left: 0.25rem;
 }
 
-.card-content > h1 {
+.card-content > a {
   display: inline-block;
   margin: 0;
 }
-.card-content > h1:after {
+.card-content > a:after {
   display: block;
   content: "";
   border-bottom: solid 2px #7e1010;
   transform: scaleX(0.2);
   transition: transform 250ms ease-in-out;
 }
-.card-content > h1:hover:after {
+.card-content > a:hover:after {
   transform: scaleX(1);
   color: #7e1010;
 }
-.card-content > h1:after {
+.card-content > a:after {
   transform-origin: 0% 50%;
   color: #7e1010;
 }
-.card-content > h1:hover {
+.card-content > a:hover {
   color: #7e1010;
   cursor: pointer;
+}
+.scrolling-pic {
+  transform: translateY(0%);
+  transition: transform 8s ease-in-out 0s;
 }

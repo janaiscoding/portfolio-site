@@ -16,9 +16,11 @@ module.exports = {
       black: "#030408",
       orange: "#ED7372",
       red: "#7e1010",
+      softgrey: '#58656570',
+      softblack: '#222326'
     },
     boxShadow: {
-      md: "4px 4px 17px -1px rgba(45 138 164 / 0.05) ",
+      md: "4px 4px 17px -1px rgba(45 138 164 / 0.15)",
     },
     dropShadow: {
       xl: "0px 4px 10px rgba(45 138 164 / 0.5) ",

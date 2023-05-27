@@ -21,7 +21,9 @@ const Skills = ({ inView }) => {
   ));
   const controls = useAnimation();
   useEffect(() => {
-    inView ? controls.start("visible") : controls.start("hidden");
+    if (inView) {
+      controls.start("visible");
+    }
   }, [controls, inView]);
   return (
     <motion.section

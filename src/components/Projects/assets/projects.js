@@ -1,7 +1,10 @@
+import clonner from "./clonnerboxd.web.app.png";
+import umai from "./umai-restaurant.web.app.png";
+import photo from "./a-photo-tagging-app.web.app_.png";
 const projects = [
   {
     id: 1,
-    title: "Letterboxd Clone",
+    title: "Letterboxd Clone 🎥",
     description: [
       {
         id: 11,
@@ -36,6 +39,92 @@ const projects = [
     ],
     demoLink: "https://clonnerboxd.web.app/",
     repoLink: "https://github.com/janaiscoding/letterboxd-clone",
+    variant: "fromLeft",
+    image: clonner,
+    translateY: "70",
+  },
+  {
+    id: 2,
+    title: "Umaī Restaurant 🍣",
+    description: [
+      {
+        id: 21,
+        text: "Umaī is a fictive asian restaurant with a shopping cart functionality",
+      },
+      {
+        id: 22,
+        text: "The UI is inspired by visiting resturant websites and design platforms targeting the same audience",
+      },
+      {
+        id: 23,
+        text: "Add to cart, remove, subscribe to the newsletter for “25% discount” or book a “reservation”",
+      },
+    ],
+    tech: [
+      {
+        id: 211,
+        name: "React",
+      },
+      {
+        id: 222,
+        name: "CSS3",
+      },
+      {
+        id: 233,
+        name: "TailwindCSS",
+      },
+      {
+        id: 244,
+        name: "Shopping Cart",
+      },
+    ],
+    demoLink: "https://umai-restaurant.web.app/",
+    repoLink: "https://github.com/janaiscoding/shopping-cart",
+    variant: "fromLeft",
+    image: umai,
+    translateY: "70",
+  },
+  {
+    id: 3,
+    title: "Historical Photo Tagging App 📸",
+    description: [
+      {
+        id: 31,
+        text: "A Find Waldo-like game set inside the chinese painting “Discussing the Divine Comedy with Dante”",
+      },
+      {
+        id: 32,
+        text: "Global sorted leaderboard based on user timers implemented through Firebase DB",
+      },
+      {
+        id: 33,
+        text: "Find all 3 targets and save your score, see how fast you can be!",
+      },
+    ],
+    tech: [
+      {
+        id: 311,
+        name: "React",
+      },
+      {
+        id: 322,
+        name: "Firestore Cloud",
+      },
+      {
+        id: 333,
+        name: "CSS3",
+      },
+      {
+        id: 344,
+        name: "Framer Motion",
+      },
+    ],
+    demoLink: "https://a-photo-tagging-app.web.app/",
+    repoLink: "https://github.com/janaiscoding/photo-tagging-app",
+    variant: "fromLeft",
+    image: photo,
+    translateY: "20",
   },
 ];
+
 export default projects;
