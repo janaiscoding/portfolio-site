@@ -19,72 +19,16 @@
   font-family: "Poppins-Light";
   src: url("./assets/fonts/Poppins/Poppins-Light.ttf");
 }
-
+@font-face {
+  font-family: "Merienda-One";
+  src: url("./assets/fonts/MeriendaOne-Regular.ttf");
+}
 body {
   background-color: #f8f7f7;
 }
-.easeInFromLeft {
-  animation: fadeInFromLeft 1.2s ease-in normal forwards;
-}
 
-@keyframes fadeInFromLeft {
-  0% {
-    opacity: 0;
-    transform: translate(-100vw, 0vh);
-  }
-  30% {
-    opacity: 0.1;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-.easeInFromRight {
-  animation: fadeInFromRight 1.2s ease-in normal forwards;
-}
-@keyframes fadeInFromRight {
-  0% {
-    opacity: 0;
-    transform: translate(100vh, 0vh);
-  }
-  30% {
-    opacity: 0.1;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-.easeInFromBottom {
-  animation: fadeInFromBottom 1.5s ease-in normal forwards;
-}
-@keyframes fadeInFromBottom {
-  0% {
-    opacity: 0;
-    transform: translate(0vh, 100vh);
-  }
-  30% {
-    opacity: 0.1;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-.easeInFromTop {
-  animation: fadeInFromTop 1.8s ease-in normal forwards;
-}
-@keyframes fadeInFromTop {
-  0% {
-    opacity: 0;
-    transform: translate(0vh, -100vh);
-  }
-  30% {
-    opacity: 0.1;
-  }
-
-  100% {
-    opacity: 1;
-  }
+ul > li + li {
+  margin-left: 5px;
+  padding-left: 5px;
+  border-left: 2px solid #58656570;
 }

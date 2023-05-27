@@ -1,11 +1,8 @@
 import React from "react";
 import "./icon.css";
 
-interface IconProps {
-  url: string;
-  name: string;
-}
-const Icon: React.FC<IconProps> = ({ url, name }) => {
+
+const Icon = ({ url, name }) => {
   return (
     <div className="flex gap-4 justify-between items-end p-2 icon">
       <img

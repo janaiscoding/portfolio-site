@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import ArrowRight from "../../assets/Icons/Arrow.png";
 import "./arrow.css";
-interface ButtonProps {
-  content: string;
-}
-const Button: React.FC<ButtonProps> = ({ content }) => {
+import { HashLink as Link } from "react-router-hash-link";
+
+const HashButton = ({ content, linkTo }) => {
   const [hovered, setHovered] = useState(false);
   return (
-    <button
+    <Link
+      to={linkTo}
       className={`flex items-center border-2 border-blue p-2 gap-2 mt-6`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
@@ -18,8 +18,8 @@ const Button: React.FC<ButtonProps> = ({ content }) => {
         className={`w-max h-max hover-arrow ${hovered ? "translate-x-1" : ""}`}
         alt="arrow right indicator"
       />
-    </button>
+    </Link>
   );
 };
 
-export default Button;
+export default HashButton;

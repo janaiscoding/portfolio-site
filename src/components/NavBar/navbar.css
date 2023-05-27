@@ -93,3 +93,33 @@
   -o-animation: hideNav 1s ease forwards;
   animation: hideNav 1s ease forwards;
 }
+
+.nav-link {
+  display: inline-block;
+  margin: 0;
+}
+.nav-link:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #7e1010;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.nav-link:hover:after {
+  transform: scaleX(1);
+  color: #7e1010;
+}
+.nav-link:after {
+  transform-origin: 0% 50%;
+  color: #7e1010;
+}
+.nav-link:hover {
+  color: #7e1010;
+}
+.logo-link {
+  text-shadow: 2px 2px 4px #00000034;
+  transition: all 150ms ease-in-out;
+}
+.logo-link:hover {
+  text-shadow: 5px 3px 4px #440b0b71;
+}
