@@ -6,7 +6,7 @@
 
 ### On Browser
 
-![Screenshot of personal portfolio - Desktop](./src/assets/jana-istrate.web.app_%20(2).png)
+![Gif preview personal portfolio - Desktop](./src/assets/portfolio-desktop.gif)
 
 ### On Mobile
 
