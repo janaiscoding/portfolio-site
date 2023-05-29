@@ -10,7 +10,7 @@ const Socials = () => {
       animate="end"
       className="hidden md:flex flex-col gap-4 fixed top-[50%] p-3 left-[0%] socials"
     >
-      <Link to="https://www.linkedin.com/in/jana-istrate/">
+      <Link to="https://www.linkedin.com/in/jana-istrate/" target="_blank" rel="noopener noreferrer">
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
           width={24}
@@ -20,7 +20,7 @@ const Socials = () => {
           alt="LinkedIn Logo"
         />
       </Link>
-      <Link to="https://github.com/janaiscoding">
+      <Link to="https://github.com/janaiscoding" target="_blank" rel="noopener noreferrer">
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
           width={24}

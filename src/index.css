@@ -27,3 +27,8 @@ body {
   background-color: #f8f7f7;
 }
 
+.separator{
+  flex: 1 1;
+  height:1px;
+  background-color:#222326;
+}

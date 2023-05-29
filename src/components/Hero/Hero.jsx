@@ -5,6 +5,7 @@ import { useInView } from "react-intersection-observer";
 import "./hero.css";
 import HashButton from "../Button/HashButton";
 import Socials from "../Socials/Socials";
+import WatermarkTopDesktop from "../UI_elements/WMTopDesktop";
 const fromLeft = {
   visible: {
     opacity: 1,
@@ -98,6 +99,11 @@ const Hero = () => {
           ></div>
         </motion.div>
       </div>
+      <WatermarkTopDesktop
+        title={"AboutMe onRead={()=>setImpressed(true)}"}
+        top={"95%"}
+        left={"20%"}
+      />
     </div>
   );
 };

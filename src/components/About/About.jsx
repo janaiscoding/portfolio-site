@@ -30,21 +30,16 @@ const About = () => {
   }, [controls, inView]);
   return (
     <div
-      className="about md:h-screen overflow-hidden relative"
+      className="about overflow-hidden relative"
       id="about"
       ref={ref}
     >
-      <WatermarkTopDesktop
-        title={"AboutMe onRead={()=>setImpressed(true)}"}
-        top={"5%"}
-        left={"10%"}
-      />
       <WatermarkTopMobile
         title={"AboutMe onRead={()=>setImpressed(true)}"}
         top={"5%"}
         left={"5%"}
       />
-      <section className="flex flex-col gap-6 px-6 md:flex-row md:justify-between md:max-w-6xl md:mx-auto md:gap-40 py-[20vh] md:py-[30vh]">
+      <section className="flex flex-col gap-6 px-6 md:flex-row md:justify-between md:max-w-6xl md:mx-auto md:gap-40 py-[20vh] md:pt-[10vh] md:pb-[20vh]">
         <motion.div
           animate={controls}
           variants={fromLeft}
@@ -75,7 +70,7 @@ const About = () => {
         <Skills inView={inView} />
       </section>
 
-      <WatermarkBottomDesktop title={"AboutMe"} top={"85%"} left={"68%"} />
+      <WatermarkBottomDesktop title={"AboutMe"} top={"87%"} left={"80%"} />
       <WatermarkBottomMobile title={"AboutMe"} top={"90%"} left={"45%"} />
     </div>
   );

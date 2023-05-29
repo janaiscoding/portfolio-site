@@ -43,7 +43,7 @@ const Projects = () => {
       <WatermarkTopDesktop
         title={"Projects projects={amazing}"}
         top={"5%"}
-        left={"10%"}
+        left={"20%"}
       />
       <WatermarkTopMobile
         title={"Projects projects={amazing}"}

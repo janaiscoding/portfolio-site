@@ -30,7 +30,7 @@ const Skills = ({ inView }) => {
       animate={controls}
       initial="hidden"
       variants={fromRight}
-      className="basis-full"
+      className="flex flex-col basis-full"
     >
       <h2 className="text-2xl text-grey font-overpass600 tracking-wider text-center my-4">
         MY SKILLS
@@ -38,6 +38,7 @@ const Skills = ({ inView }) => {
       <div className="flex flex-wrap items-end self-end gap-4 p-2">
         {allSkills}
       </div>
+      <div className="self-end text-grey text-sm mt-2">*And open to work with stuff not listed above</div>
     </motion.section>
   );
 };

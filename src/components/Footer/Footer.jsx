@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-softblack shadow-md">
+    <footer className="">
       <div className="flex justify-between items-center px-6 max-w-6xl h-20 md:mx-auto ">
-        <div className="font-overpass600 text-base text-white">
+        <div className="font-overpass600 text-base text-softblack">
           Copyright © 2023. All rights are reserved
         </div>
         <div className="flex gap-6">

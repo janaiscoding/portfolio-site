@@ -4,7 +4,9 @@ import Heading from "../UI_elements/Heading";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
-import ContactCard from "./ContactCard";
+import ContactCard from "./ContactMail";
+import ContactMail from "./ContactMail";
+import ContactSocials from "./ContactSocials";
 const fromRight = {
   visible: {
     opacity: 1,
@@ -30,19 +32,28 @@ const Contact = () => {
   return (
     <div className="contact overflow-hidden relative" id="contact" ref={ref}>
       <motion.section initial="hidden" animate={controls} variants={fromRight}>
-        <div className="flex flex-col items-center px-6 md:max-w-6xl md:mx-auto pb-[10vh]">
-          <Link
-            to={"/#contact"}
-            className="flex text-4xl font-overpass600 my-4"
-          >
-            <p className="text-orange">#</p>
-            <h1 className="tracking-wide text-black">Let’s Talk</h1>
-          </Link>
-          <h1 className="text-base md:text-xl text-grey font-overpass600 tracking-wider mb-4  pl-2 md:pl-6">
+        <div className="flex flex-col items-center px-12 w-full">
+          <div className="flex items-center w-full">
+            <div className="separator"></div>
+            <Link
+              to={"/#contact"}
+              className="flex text-4xl font-overpass600 m-6"
+            >
+              <p className="text-orange">#</p>
+              <h1 className="tracking-wide text-black">Let’s Talk</h1>
+            </Link>
+            <div className="separator"></div>
+          </div>
+          <h1 className="text-base md:text-xl text-grey font-overpass600 tracking-wider">
             Let’s discuss your <span className="text-blue">awesome</span> ideas
           </h1>
-          <div className="flex justify-between">
-            <ContactCard title="Mail" content="jana.istrate@gmail.com" />
+          <div className="flex flex-col items-center justify-between gap-6 my-12">
+            <ContactMail />
+            <h1 className="text-softblack tracking-widest">OR</h1>
+            <ContactSocials />
+          </div>
+          <div className="flex items-center w-full my-6">
+            <div className="separator"></div>
           </div>
         </div>
       </motion.section>
