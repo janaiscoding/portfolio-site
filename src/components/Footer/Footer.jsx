@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const [year, setYear] = useState(null);
+  useEffect(() => {
+    let newDate = new Date();
+    setYear(newDate.getFullYear());
+  }, []);
   return (
     <footer className="">
-      <div className="flex justify-between items-center px-6 max-w-6xl h-20 md:mx-auto ">
-        <div className="font-overpass600 text-base text-softblack">
-          Copyright © 2023. All rights are reserved
+      <div className="flex justify-between items-center px-6 md:px-16 max-w-6xl h-20 md:mx-auto ">
+        <div className="font-overpass600 text-xs md:text-base text-softblack">
+          Copyright © {year}. All rights are reserved.
         </div>
         <div className="flex gap-6">
           <Link to="https://www.linkedin.com/in/jana-istrate/">
@@ -15,7 +20,7 @@ const Footer = () => {
               width={24}
               height={24}
               title="LinkedIn"
-              className="hover:cursor-pointer hover:scale-110 ease-in-out"
+              className="social-hover"
               alt="LinkedIn Logo"
             />
           </Link>
@@ -25,7 +30,7 @@ const Footer = () => {
               width={24}
               height={24}
               title="GitHub"
-              className="hover:cursor-pointer hover:scale-110 "
+              className="social-hover"
               alt="GitHub Logo"
             />
           </Link>

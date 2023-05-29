@@ -8,14 +8,16 @@ const HashButton = ({ content, linkTo }) => {
   return (
     <Link
       to={linkTo}
-      className={`flex items-center border-2 border-blue p-2 gap-2 mt-6`}
+      className={`flex items-center border-2 border-blue p-2 gap-2 mt-4`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
       <p className={`font-poppins300 text-base tracking-tight`}>{content}</p>
       <img
         src={ArrowRight}
-        className={`w-max h-max hover-arrow ${hovered ? "translate-x-1" : ""}`}
+        className={`w-max h-max hover-arrow ${
+          hovered ? "animate-[wiggle_1s_ease-in-out_infinite]" : ""
+        }`}
         alt="arrow right indicator"
       />
     </Link>

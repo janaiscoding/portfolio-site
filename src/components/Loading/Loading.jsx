@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import SplitType from "split-type";
@@ -6,6 +7,7 @@ import "./loading.css";
 
 const Loading = ({ setDone }) => {
   useEffect(() => {
+    // eslint-disable-next-line no-unused-vars
     const myText = new SplitType("#myText");
     gsap.to(".char", {
       y: 0,
@@ -15,7 +17,7 @@ const Loading = ({ setDone }) => {
     });
     setTimeout(() => {
       setDone(true);
-    }, 1700);
+    }, 1800);
   }, []);
   return (
     <div className="loading-screen">

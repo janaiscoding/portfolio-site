@@ -2,10 +2,7 @@
 .hover-arrow {
   transition: 250ms all ease;
 }
-.hover-arrow:hover {
-  transition: 250ms all ease;
-  opacity: 1;
-}
-button{
+
+button {
   transition: 150ms all ease;
 }

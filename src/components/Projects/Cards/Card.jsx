@@ -32,7 +32,7 @@ const Card = ({ project }) => {
       animate={controls}
       variants={fromLeft}
       initial="hidden"
-      className="card shadow-md flex flex-col-reverse gap-6 md:flex-row p-2 md:p-6 h-[44rem] md:h-96"
+      className="card bg-purewhite flex flex-col-reverse gap-6 md:flex-row px-2 py-6 md:p-6 h-[44rem] md:h-96 shadow-md hover:border-solid hover:border-softgrey"
     >
       <div className="card-content flex flex-col gap-2 items-start border-solid border-softgrey md:border-r-2 basis-full">
         <a
@@ -51,12 +51,12 @@ const Card = ({ project }) => {
         <ul className="font-poppins300 text-sm md:text-base">
           {project.description.map((detail) => (
             <div key={detail.id} className="flex gap-2 py-1 items-center">
-              <div className="w-2 h-2 rounded-full bg-red"></div>
+              {/* <div className="w-2 h-2 rounded-full bg-red"></div> */}
               <p className="basis-11/12">{detail.text}</p>
             </div>
           ))}
         </ul>
-        <div className="flex gap-9">
+        <div className="flex self-center md:self-start gap-9">
           <Button
             content={"Demo"}
             linkTo={project.demoLink}
@@ -75,7 +75,7 @@ const Card = ({ project }) => {
             src={project.image}
             height="auto"
             alt={`preview of ${project.title}`}
-            className={`scrolling-pic shadow-md`}
+            className={`scrolling-pic`}
             onMouseEnter={() => setHov(true)}
             onMouseLeave={() => setHov(false)}
             style={

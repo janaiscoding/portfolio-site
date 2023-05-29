@@ -23,16 +23,22 @@ const fromRight = {
 const Contact = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
+
   useEffect(() => {
     if (inView) {
       controls.start("visible");
-    }
+    } 
   }, [controls, inView]);
 
   return (
     <div className="contact overflow-hidden relative" id="contact" ref={ref}>
-      <motion.section initial="hidden" animate={controls} variants={fromRight}>
-        <div className="flex flex-col items-center px-12 w-full">
+      <motion.section
+        initial="hidden"
+        animate={controls}
+        variants={fromRight}
+        className="md:pt-[5vh]"
+      >
+        <div className="flex flex-col items-center px-6 md:px-12 w-full">
           <div className="flex items-center w-full">
             <div className="separator"></div>
             <Link
@@ -45,7 +51,7 @@ const Contact = () => {
             <div className="separator"></div>
           </div>
           <h1 className="text-base md:text-xl text-grey font-overpass600 tracking-wider">
-            Let’s discuss your <span className="text-blue">awesome</span> ideas
+            Let’s discuss your <span className="font-poppins500 text-blue underline-on-hover">awesome</span> ideas
           </h1>
           <div className="flex flex-col items-center justify-between gap-6 my-12">
             <ContactMail />

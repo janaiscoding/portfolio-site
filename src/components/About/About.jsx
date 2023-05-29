@@ -39,7 +39,12 @@ const About = () => {
         top={"5%"}
         left={"5%"}
       />
-      <section className="flex flex-col gap-6 px-6 md:flex-row md:justify-between md:max-w-6xl md:mx-auto md:gap-40 py-[20vh] md:pt-[10vh] md:pb-[20vh]">
+      <WatermarkTopDesktop
+        title={"AboutMe onRead={()=>setImpressed(true)}"}
+        top={"15%"}
+        left={"10%"}
+      />
+      <section className="flex flex-col gap-6 px-6 md:flex-row md:justify-between md:max-w-6xl md:mx-auto md:gap-40 pb-[10vh] pt-[20vh] md:my-[10vh] md:py-[20vh]">
         <motion.div
           animate={controls}
           variants={fromLeft}
@@ -47,20 +52,29 @@ const About = () => {
           className="basis-full"
         >
           <Heading title={"About Me"} linkTo={"/#about"} />
-          <section className="flex flex-col gap-6 font-poppins300">
+          <section className="flex flex-col gap-2 font-poppins300">
             <p>
-              I aim to become an
-              <span className="text-blue"> impactful</span> member of the
-              exciting, challenging world of web development and programming.
+              Hello there, my name is Jana and I aim to become an{" "}
+              <span className="font-poppins500 underline-on-hover">
+                impactful
+              </span>{" "}
+              member of the exciting, challenging world of web development and
+              programming.
             </p>
             <p>
-              I firmly believe that through consistent work,
-              <span className="text-blue"> discipline</span> and patience, I can
-              put my mind to anything!
+              I firmly believe that through consistent work,{" "}
+              <span className="font-poppins500 underline-on-hover">
+                discipline
+              </span>{" "}
+              and patience, I can put my mind to anything!
             </p>
             <p>
-              So why pick me? Because I'm striving for
-              perfection, looking to make a difference and just wanna get *&!# done!
+              I am actively seeking a job as a Front-end Developer and I can't
+              wait to put my skills to use and make<br></br>
+              <span className="font-poppins500 underline-on-hover">
+                a real difference
+              </span>
+              .
             </p>
           </section>
           {/* <div className="self-start">
@@ -71,7 +85,7 @@ const About = () => {
       </section>
 
       <WatermarkBottomDesktop title={"AboutMe"} top={"87%"} left={"80%"} />
-      <WatermarkBottomMobile title={"AboutMe"} top={"90%"} left={"45%"} />
+      <WatermarkBottomMobile title={"AboutMe"} top={"95%"} left={"45%"} />
     </div>
   );
 };

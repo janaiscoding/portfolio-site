@@ -11,7 +11,7 @@ import WatermarkBottomMobile from "../UI_elements/WMBottomMobile";
 import Card from "./Cards/Card";
 import projects from "./assets/projects";
 import Button from "../Button/Button";
-import HashButton from "../Button/HashButton";
+
 const fromLeft = {
   visible: {
     opacity: 1,
@@ -43,14 +43,14 @@ const Projects = () => {
       <WatermarkTopDesktop
         title={"Projects projects={amazing}"}
         top={"5%"}
-        left={"20%"}
+        left={"10%"}
       />
       <WatermarkTopMobile
         title={"Projects projects={amazing}"}
         top={"2%"}
         left={"5%"}
       />
-      <div className="flex flex-col gap-6 px-6 md:max-w-6xl md:mx-auto py-[20vh]">
+      <div className="flex flex-col gap-6 px-6 md:max-w-6xl md:mx-auto pb-[10vh] pt-[20vh] md:py-[20vh]">
         <motion.div variants={fromLeft} initial="hidden" animate={controls}>
           <Heading title={"Projects"} linkTo={"/#projects"} />
           <h1 className="text-xl text-grey font-overpass600 tracking-wider mb-4  pl-2 md:pl-6">
@@ -63,11 +63,14 @@ const Projects = () => {
           ))}
         </div>
         <div className="self-center">
-          <HashButton content={"See more"} linkTo={'https://github.com/janaiscoding?tab=repositories'} />
+          <Button
+            content={"See more"}
+            linkTo={"https://github.com/janaiscoding?tab=repositories"}
+          />
         </div>
       </div>
       <WatermarkBottomDesktop title={"Projects"} top={"95%"} left={"68%"} />
-      <WatermarkBottomMobile title={"Projects"} top={"96%"} left={"45%"} />
+      <WatermarkBottomMobile title={"Projects"} top={"99%"} left={"60%"} />
     </div>
   );
 };
