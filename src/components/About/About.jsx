@@ -44,7 +44,7 @@ const About = () => {
         top={"15%"}
         left={"10%"}
       />
-      <section className="flex flex-col gap-6 px-6 md:flex-row md:justify-between md:max-w-6xl md:mx-auto md:gap-40 pb-[10vh] pt-[20vh] md:my-[10vh] md:py-[20vh]">
+      <section className="flex flex-col gap-6 px-6 md:flex-row md:justify-between md:max-w-6xl md:mx-auto md:gap-40 pb-[10vh] pt-[20vh] md:mt-[15vh] md:pt-0 ">
         <motion.div
           animate={controls}
           variants={fromLeft}
@@ -84,7 +84,7 @@ const About = () => {
         <Skills inView={inView} />
       </section>
 
-      <WatermarkBottomDesktop title={"AboutMe"} top={"87%"} left={"80%"} />
+      <WatermarkBottomDesktop title={"AboutMe"} top={"95%"} left={"80%"} />
       <WatermarkBottomMobile title={"AboutMe"} top={"95%"} left={"45%"} />
     </div>
   );

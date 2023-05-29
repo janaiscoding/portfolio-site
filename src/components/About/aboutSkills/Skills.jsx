@@ -53,7 +53,7 @@ const Skills = ({ inView }) => {
           <p className="font-overpass600 text-center">Framer Motion</p>
         </div>
       </div>
-      <div className="self-end text-grey text-sm mt-2">
+      <div className="self-end font-poppins300 text-grey text-sm mt-2">
         *Open to work with stuff not listed above, currently learning MERN
       </div>
     </motion.section>

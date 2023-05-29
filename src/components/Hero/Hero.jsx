@@ -6,6 +6,7 @@ import "./hero.css";
 import HashButton from "../Button/HashButton";
 import WatermarkTopDesktop from "../UI_elements/WMTopDesktop";
 import WatermarkTopMobile from "../UI_elements/WMTopMobile";
+import WatermarkBottomDesktop from "../UI_elements/WMBottomDesktop";
 
 const fromLeft = {
   visible: {
@@ -100,16 +101,18 @@ const Hero = () => {
           ></div>
         </motion.div>
       </div>
+      <WatermarkTopDesktop title={"HelloWorld"} top={"10%"} left={"5%"} />
       <WatermarkTopDesktop
-        title={"Nice to meet you! /"}
+        title={"Nice to meet you!"}
         top={"80%"}
-        left={"10%"}
+        left={"20%"}
       />
       <WatermarkTopMobile
-        title={"Nice to meet you! /"}
-        top={"15%"}
+        title={" Nice to meet you! /"}
+        top={"10%"}
         left={"30%"}
       />
+      <WatermarkBottomDesktop title={"HelloWorld"} top={"95%"} left={"80%"} />
     </div>
   );
 };

@@ -1,10 +1,8 @@
 import React, { useEffect } from "react";
-import Heading from "../UI_elements/Heading";
 
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
-import ContactCard from "./ContactMail";
 import ContactMail from "./ContactMail";
 import ContactSocials from "./ContactSocials";
 const fromRight = {
@@ -58,7 +56,7 @@ const Contact = () => {
             <h1 className="text-softblack tracking-widest">OR</h1>
             <ContactSocials />
           </div>
-          <div className="flex items-center w-full my-6">
+          <div className="flex items-center w-full mt-6">
             <div className="separator"></div>
           </div>
         </div>

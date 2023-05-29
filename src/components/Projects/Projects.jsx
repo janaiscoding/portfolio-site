@@ -42,7 +42,7 @@ const Projects = () => {
     >
       <WatermarkTopDesktop
         title={"Projects projects={amazing}"}
-        top={"5%"}
+        top={"3%"}
         left={"10%"}
       />
       <WatermarkTopMobile
@@ -50,7 +50,7 @@ const Projects = () => {
         top={"2%"}
         left={"5%"}
       />
-      <div className="flex flex-col gap-6 px-6 md:max-w-6xl md:mx-auto pb-[10vh] pt-[20vh] md:py-[20vh]">
+      <div className="flex flex-col gap-6 px-6 md:max-w-6xl md:mx-auto pb-[10vh] pt-[20vh] md:py-[15vh]">
         <motion.div variants={fromLeft} initial="hidden" animate={controls}>
           <Heading title={"Projects"} linkTo={"/#projects"} />
           <h1 className="text-xl text-grey font-overpass600 tracking-wider mb-4  pl-2 md:pl-6">
