@@ -36,23 +36,33 @@ const mySkills = [
   },
   {
     id: 8,
+    name: "Bootstrap",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+  },
+  {
+    id: 9,
     name: "Jest",
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
   },
   {
-    id: 9,
+    id: 10,
     name: "Firebase",
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
   },
   {
-    id: 10,
+    id: 11,
     name: "VSCode",
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
   },
   {
-    id: 11,
+    id: 12,
     name: "Figma",
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
   },
+  {
+    id: 13,
+    name: "Webpack",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg",
+  }
 ];
 export default mySkills;
