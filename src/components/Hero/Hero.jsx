@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Profile from "../../assets/jana-istrate.webp";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import "./hero.css";
 import HashButton from "../Button/HashButton";
 import WatermarkTopDesktop from "../UI_elements/WMTopDesktop";
 import WatermarkTopMobile from "../UI_elements/WMTopMobile";
@@ -88,17 +87,14 @@ const Hero = () => {
           animate={controls}
           variants={fromRight}
           initial="hidden"
-          className="relative mr-10"
+          className="relative md:mr-10 self-center"
         >
           <img
             src={Profile}
             className="w-[240px] md:w-[280px] z-10 relative"
             alt="Jana Istrate portoflio portrait"
           />
-          <div
-            className="border-2 border-blue w-[240px] md:w-[280px] top-0 left-0 translate-y-4 translate-x-4 absolute slowDiv"
-            style={{ height: "-webkit-fill-available" }}
-          ></div>
+          <div className="border-2 border-blue w-[240px] min-h-[350px] md:min-h-[420px] md:w-[280px] top-0 left-0 translate-y-4 translate-x-4 absolute slowDiv"></div>
         </motion.div>
       </div>
       <WatermarkTopDesktop title={"HelloWorld"} top={"10%"} left={"5%"} />
