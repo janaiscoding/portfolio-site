@@ -58,13 +58,15 @@ const Navbar = () => {
           >
             {"{ J }"}
           </Link>
-          <Lottie
-            animationData={hamburgerMenu}
-            loop={false}
-            lottieRef={lottieRef}
-            onClick={handleLottie}
-            className="md:hidden"
-          />
+          <div className="md:hidden w-[24px] h-[24px]">
+            <Lottie
+              animationData={hamburgerMenu}
+              loop={false}
+              lottieRef={lottieRef}
+              onClick={handleLottie}
+              className="md:hidden"
+            />
+          </div>
           {/* DESKTOP NAVBAR */}
           <nav className="hidden md:flex gap-9 font-overpass text-base tracking-wider align-baseline mr-10 hover:cursor-pointer">
             <Link to="/#about" className="nav-link" id="about-link">

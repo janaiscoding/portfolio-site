@@ -44,12 +44,12 @@ const Contact = () => {
               className="flex text-4xl font-overpass600 m-6"
             >
               <p className="text-orange">#</p>
-              <h1 className="tracking-wide text-black">Let’s Talk</h1>
+              <h1 className="tracking-wide text-black">Contact</h1>
             </Link>
             <div className="separator"></div>
           </div>
           <h1 className="text-base md:text-xl text-grey font-overpass600 tracking-wider">
-            Let’s discuss your <span className="font-poppins500 text-blue underline-on-hover">awesome</span> ideas
+            Let’s build <span className="font-poppins500 text-blue underline-on-hover">awesome</span> things
           </h1>
           <div className="flex flex-col items-center justify-between gap-6 my-12">
             <ContactMail />

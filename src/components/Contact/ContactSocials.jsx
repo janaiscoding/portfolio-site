@@ -14,7 +14,7 @@ const ContactSocials = () => {
             width={36}
             height={36}
             title="LinkedIn"
-            className="social-hover"
+            className="pulse-hover"
             alt="LinkedIn Logo"
           />
         </Link>
@@ -24,7 +24,7 @@ const ContactSocials = () => {
             width={36}
             height={36}
             title="GitHub"
-            className="social-hover"
+            className="pulse-hover"
             alt="GitHub Logo"
           />
         </Link>

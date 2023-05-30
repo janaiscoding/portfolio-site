@@ -30,7 +30,7 @@ const About = () => {
   }, [controls, inView]);
   return (
     <div
-      className="about overflow-hidden relative"
+      className="about overflow-hidden relative scroll-mt-2.5"
       id="about"
       ref={ref}
     >
@@ -54,27 +54,28 @@ const About = () => {
           <Heading title={"About Me"} linkTo={"/#about"} />
           <section className="flex flex-col gap-2 font-poppins300">
             <p>
-              Hello there, my name is Jana and I aim to become an{" "}
+              I aim to become an{" "}
               <span className="font-poppins500 underline-on-hover">
                 impactful
               </span>{" "}
-              member of the exciting, challenging world of web development and
-              programming.
-            </p>
-            <p>
-              I firmly believe that through consistent work,{" "}
+              member of the exciting, ever-evolving field of web development and
+              programming.<br></br>I firmly believe that anything is possible
+              through consistent work and{" "}
               <span className="font-poppins500 underline-on-hover">
-                discipline
-              </span>{" "}
-              and patience, I can put my mind to anything!
-            </p>
-            <p>
-              I am actively seeking a job as a Front-end Developer and I can't
-              wait to put my skills to use and make<br></br>
-              <span className="font-poppins500 underline-on-hover">
-                a real difference
+                discipline.
               </span>
-              .
+            </p>
+
+            <p>
+              Outside of coding, I like to workout, browse for new music, play
+              ARPGs or watch a good movie (big fan of the clasics like Scorsese
+              and Kubrick).{"  "}
+            </p>
+            <p>
+              <span className="font-poppins500 underline-on-hover">
+                Thank you
+              </span>{" "}
+              for getting to know me!
             </p>
           </section>
           {/* <div className="self-start">

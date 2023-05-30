@@ -53,8 +53,8 @@ const Projects = () => {
       <div className="flex flex-col gap-6 px-6 md:max-w-6xl md:mx-auto pb-[10vh] pt-[20vh] md:py-[15vh]">
         <motion.div variants={fromLeft} initial="hidden" animate={controls}>
           <Heading title={"Projects"} linkTo={"/#projects"} />
-          <h1 className="text-xl text-grey font-overpass600 tracking-wider mb-4  pl-2 md:pl-6">
-            A few of my personal favorites
+          <h1 className="text-xl text-grey font-overpass600 tracking-wider mb-4 pl-2 md:pl-6">
+            Some of my personal favorites!
           </h1>
         </motion.div>
         <div className="projects-wrapper flex flex-col gap-14">

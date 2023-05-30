@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./arrow.css";
 import { Link } from "react-router-dom";
-import upArrow from "./up-right-arrow.png";
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

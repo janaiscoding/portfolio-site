@@ -9,18 +9,18 @@ const Footer = () => {
   }, []);
   return (
     <footer className="">
-      <div className="flex justify-between items-center px-6 md:px-16 max-w-6xl h-20 md:mx-auto ">
+      <div className="flex justify-between items-center px-6 max-w-6xl h-20 md:mx-auto ">
         <div className="font-overpass600 text-xs md:text-base text-softblack">
-          Copyright © {year}. All rights are reserved.
+          © {year}. Made with 🧡 by JanaIsCoding.
         </div>
-        <div className="flex gap-6">
+        <div className="flex gap-6 md:px-10">
           <Link to="https://www.linkedin.com/in/jana-istrate/">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
               width={24}
               height={24}
               title="LinkedIn"
-              className="social-hover"
+              className="pulse-hover"
               alt="LinkedIn Logo"
             />
           </Link>
@@ -30,7 +30,7 @@ const Footer = () => {
               width={24}
               height={24}
               title="GitHub"
-              className="social-hover"
+              className="pulse-hover"
               alt="GitHub Logo"
             />
           </Link>
