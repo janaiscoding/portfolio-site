@@ -1,6 +1,6 @@
-import clonner from "./clonnerboxd.web.app.png";
-import umai from "./umai-restaurant.web.app.png";
-import photo from "./a-photo-tagging-app.web.app_.png";
+import clonner from "./clonnerboxd.web.app.webp";
+import umai from "./umai-restaurant.web.app.webp";
+import photo from "./PTAPP.webp";
 import battleships from './howtoplay.gif'
 const projects = [
   {

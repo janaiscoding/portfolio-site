@@ -5,23 +5,28 @@
 @font-face {
   font-family: "Overpass-Regular";
   src: url("./assets/fonts/Overpass/Overpass-Regular.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Overpass-Semibold";
   src: url("./assets/fonts/Overpass/Overpass-SemiBold.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Poppins-Medium";
   src: url("./assets/fonts/Poppins/Poppins-Medium.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Poppins-Light";
   src: url("./assets/fonts/Poppins/Poppins-Light.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Merienda-One";
   src: url("./assets/fonts/MeriendaOne-Regular.ttf");
+  font-display: swap;
 }
 body {
   background-color: #f8f7f7;
@@ -38,10 +43,10 @@ body {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.01);
+    transform: scale(1.02);
   }
   100% {
-    transform: scale(1.02);
+    transform: scale(1.05);
   }
 }
 

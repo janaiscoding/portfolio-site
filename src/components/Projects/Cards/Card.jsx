@@ -43,17 +43,16 @@ const Card = ({ project }) => {
         >
           {project.title}
         </a>
-        <ul className="flex text-grey text-base gap-1 flex-wrap md:text-lg font-poppins500">
+        <ul className="flex ul-tech text-grey text-base gap-1 flex-wrap md:text-lg font-poppins500">
           {project.tech.map((tech) => (
             <li key={tech.id}>{tech.name}</li>
           ))}
         </ul>
         <ul className="font-poppins300 text-sm md:text-base">
           {project.description.map((detail) => (
-            <div key={detail.id} className="flex gap-2 py-1 items-center">
-              {/* <div className="w-2 h-2 rounded-full bg-red"></div> */}
+            <li key={detail.id} className="flex gap-2 py-1 items-center">
               <p className="basis-11/12">{detail.text}</p>
-            </div>
+            </li>
           ))}
         </ul>
         <div className="flex self-center md:self-start gap-9">
@@ -73,7 +72,8 @@ const Card = ({ project }) => {
         <a href={project.demoLink} className="self-start">
           <img
             src={project.image}
-            height="auto"
+            height={400}
+            width={500}
             alt={`preview of ${project.title}`}
             className={`scrolling-pic`}
             onMouseEnter={() => setHov(true)}

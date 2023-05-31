@@ -91,10 +91,12 @@ const Hero = () => {
         >
           <img
             src={Profile}
-            className="w-[240px] md:w-[280px] z-10 relative"
-            alt="Jana Istrate portoflio portrait"
+            className="z-10 relative"
+            width={280}
+            height={410}
+            alt="Jana Istrate frontend software developer portoflio portrait"
           />
-          <div className="border-2 border-blue w-[240px] min-h-[350px] md:min-h-[420px] md:w-[280px] top-0 left-0 translate-y-4 translate-x-4 absolute slowDiv"></div>
+          <div className="border-2 border-blue min-h-[420px] w-[280px] top-0 left-0 translate-y-4 translate-x-4 absolute slowDiv"></div>
         </motion.div>
       </div>
       <WatermarkTopDesktop title={"HelloWorld"} top={"10%"} left={"5%"} />

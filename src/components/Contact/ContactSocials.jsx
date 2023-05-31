@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const ContactSocials = () => {
   return (
     <div className="flex flex-col items-center gap-2">
-      <h3 className="text-grey font-overpass">
+      <h1 className="text-grey font-overpass">
         Reach me through social media:
-      </h3>
+      </h1>
       <div className="flex gap-6">
         <Link to="https://www.linkedin.com/in/jana-istrate/" target="_blank" rel="noopener noreferrer">
           <img

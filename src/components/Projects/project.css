@@ -1,4 +1,4 @@
-ul > li + li {
+.ul-tech > li+li {
   border-left: 2px solid #58656570;
   padding-left: 0.25rem;
 }
@@ -26,7 +26,10 @@ ul > li + li {
   color: #7e1010;
   cursor: pointer;
 }
-.scrolling-pic {
+.scrolling-pic{
   transform: translateY(0%);
   transition: transform 8s ease-in-out 0s;
+}
+.scrolling-pic:hover{
+  transform: translateY(-70%);
 }

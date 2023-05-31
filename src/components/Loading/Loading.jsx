@@ -12,12 +12,12 @@ const Loading = ({ setDone }) => {
     gsap.to(".char", {
       y: 0,
       stagger: 0.05,
-      delay: 0.2,
+      delay: 0.1,
       duration: 0.1,
     });
     setTimeout(() => {
       setDone(true);
-    }, 1800);
+    }, 1500);
   }, []);
   return (
     <div className="loading-screen">

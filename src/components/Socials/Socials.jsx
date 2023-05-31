@@ -34,7 +34,7 @@ const Socials = () => {
           width={24}
           height={24}
           title="LinkedIn"
-          className="social-hover"
+          className="pulse-hover"
           alt="LinkedIn Logo"
         />
       </Link>
@@ -48,7 +48,7 @@ const Socials = () => {
           width={24}
           height={24}
           title="GitHub"
-          className="social-hover"
+          className="pulse-hover"
           alt="GitHub Logo"
         />
       </Link>

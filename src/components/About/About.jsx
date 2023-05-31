@@ -7,6 +7,7 @@ import WatermarkTopDesktop from "../UI_elements/WMTopDesktop";
 import WatermarkTopMobile from "../UI_elements/WMTopMobile";
 import WatermarkBottomDesktop from "../UI_elements/WMBottomDesktop";
 import WatermarkBottomMobile from "../UI_elements/WMBottomMobile";
+import Stats from "./Stats";
 const fromLeft = {
   visible: {
     opacity: 1,
@@ -45,6 +46,7 @@ const About = () => {
         left={"10%"}
       />
       <section className="flex flex-col gap-6 px-6 md:flex-row md:justify-between md:max-w-6xl md:mx-auto md:gap-40 pb-[10vh] pt-[20vh] md:mt-[15vh] md:pt-0 ">
+       {/* <div className="flex flex-col gap-6 md:flex-row"> */}
         <motion.div
           animate={controls}
           variants={fromLeft}
@@ -83,6 +85,8 @@ const About = () => {
           </div> */}
         </motion.div>
         <Skills inView={inView} />
+        {/* </div>
+        <Stats /> */}
       </section>
 
       <WatermarkBottomDesktop title={"AboutMe"} top={"95%"} left={"80%"} />
