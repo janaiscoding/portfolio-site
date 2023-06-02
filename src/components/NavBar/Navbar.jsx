@@ -84,11 +84,11 @@ const Navbar = () => {
       <nav
         className={`${isOpen ? "showNav" : "hideNav"} ${
           initialState ? "hidden" : ""
-        } mobile-nav flex flex-col justify-center items-center gap-8`}
+        } mobile-nav flex flex-col justify-center items-center gap-8 font-overpass600 text-2xl tracking-widest align-baseline`}
       >
         <Link
           to="/#about"
-          className="font-overpass text-2xl tracking-wider align-baseline"
+
           onClick={() => {
             setIsOpen(false);
             handleLottie();
@@ -98,7 +98,7 @@ const Navbar = () => {
         </Link>
         <Link
           to="/#projects"
-          className="font-overpass text-2xl tracking-wider align-baseline"
+
           onClick={() => {
             setIsOpen(false);
             handleLottie();
@@ -108,7 +108,7 @@ const Navbar = () => {
         </Link>
         <Link
           to="/#contact"
-          className="font-overpass text-2xl tracking-wider align-baseline"
+
           onClick={() => {
             setIsOpen(false);
             handleLottie();
@@ -116,7 +116,7 @@ const Navbar = () => {
         >
           CONTACT
         </Link>
-        <div className="w-24 border-2 border-solid border-orange"></div>
+        <div className="w-24 border-2 border-solid border-red"></div>
       </nav>
     </>
   );

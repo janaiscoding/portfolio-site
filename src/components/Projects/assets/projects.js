@@ -52,10 +52,10 @@ const projects = [
         id: 21,
         text: "Umaī is a fictive asian restaurant with a shopping cart functionality.",
       },
-      {
-        id: 22,
-        text: "The UI is inspired by visiting resturant websites and design platforms targeting the same audience.",
-      },
+      // {
+      //   id: 22,
+      //   text: "The UI is inspired by visiting resturant websites and design platforms targeting the same audience.",
+      // },
       {
         id: 23,
         text: "Add to cart, remove, subscribe to the newsletter for “25% discount” or book a “reservation”.",

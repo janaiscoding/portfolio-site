@@ -32,7 +32,7 @@ const Card = ({ project }) => {
       animate={controls}
       variants={fromLeft}
       initial="hidden"
-      className="card bg-purewhite flex flex-col-reverse gap-6 md:flex-row px-2 py-6 md:p-6 h-[44rem] md:h-96 shadow-md hover:border-solid hover:border-softgrey"
+      className="card bg-purewhite flex flex-col-reverse gap-6 md:flex-row px-2 py-6 md:p-6 h-[44rem] md:h-[30rem] lg:h-96 shadow-md hover:border-solid hover:border-softgrey"
     >
       <div className="card-content flex flex-col gap-2 items-start border-solid border-softgrey md:border-r-2 basis-full">
         <a

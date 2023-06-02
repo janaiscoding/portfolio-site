@@ -52,9 +52,9 @@ const Hero = () => {
   }, [controls, inView]);
 
   return (
-    <div className="home md:h-screen md:overflow-hidden">
+    <div className="home lg:h-screen md:overflow-hidden">
       <div
-        className="flex flex-col items-start px-6 pb-10 mt-20 gap-6 md:flex-row md:justify-between md:max-w-6xl md:pb-0 md:mx-auto md:mt-[10vh]"
+        className="flex flex-col items-start px-6 pb-10 mt-20 gap-6 md:flex-row md:justify-between md:max-w-6xl lg:pb-0 md:mx-auto md:mt-[10vh]"
         ref={ref}
       >
         <motion.div
@@ -99,18 +99,27 @@ const Hero = () => {
           <div className="border-2 border-blue min-h-[420px] w-[280px] top-0 left-0 translate-y-4 translate-x-4 absolute slowDiv"></div>
         </motion.div>
       </div>
-      <WatermarkTopDesktop title={"HelloWorld"} top={"10%"} left={"5%"} />
-      <WatermarkTopDesktop
-        title={"Nice to meet you!"}
-        top={"80%"}
-        left={"20%"}
-      />
       <WatermarkTopMobile
-        title={" Nice to meet you! "}
-        top={"12%"}
-        left={"18%"}
+        title={" Nice to meet you!"}
+        top={"10%"}
+        left={"30%"}
       />
-      <WatermarkBottomDesktop title={"HelloWorld"} top={"90%"} left={"80%"} />
+      <div className="hidden lg:hidden md:block">
+        <WatermarkTopDesktop
+          title={"Nice to meet you!"}
+          top={"60%"}
+          left={"5%"}
+        />
+      </div>
+      <div className="hidden md:hidden lg:block">
+        <WatermarkTopDesktop
+          title={"Nice to meet you!"}
+          top={"80%"}
+          left={"20%"}
+        />
+        <WatermarkTopDesktop title={"HelloWorld"} top={"10%"} left={"5%"} />
+        <WatermarkBottomDesktop title={"HelloWorld"} top={"90%"} left={"80%"} />
+      </div>
     </div>
   );
 };

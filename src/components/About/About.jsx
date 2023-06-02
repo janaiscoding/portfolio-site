@@ -7,7 +7,7 @@ import WatermarkTopDesktop from "../UI_elements/WMTopDesktop";
 import WatermarkTopMobile from "../UI_elements/WMTopMobile";
 import WatermarkBottomDesktop from "../UI_elements/WMBottomDesktop";
 import WatermarkBottomMobile from "../UI_elements/WMBottomMobile";
-import Stats from "./Stats";
+
 const fromLeft = {
   visible: {
     opacity: 1,
