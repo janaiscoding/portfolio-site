@@ -5,10 +5,12 @@
   border-radius: 3px;
   transition: all 0.2s ease-in-out;
 }
+.icon > img {
+  filter: grayscale(0%) !important;
+}
 .icon:hover {
   transform: translateY(-5px) scale(1.1);
   filter: grayscale(0%);
   color: white;
-  /* background-color: #1f2f3c; */
   background-color: #2d8aa498;
 }

@@ -69,9 +69,8 @@ const About = () => {
             </p>
 
             <p>
-              Outside of coding, I like to workout, browse for new music, play
-              ARPGs or watch a good movie (big fan of the clasics like Scorsese
-              and Kubrick).{"  "}
+              Outside of coding, I enjoy working out, playing
+              ARPGs with my friends or watch a good movie.{"  "}
             </p>
             <p>
               <span className="font-poppins500 underline-on-hover">

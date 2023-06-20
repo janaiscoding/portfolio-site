@@ -25,6 +25,16 @@ const mySkills = [
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
   },
   {
+    id: 51,
+    name: "NodeJS",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  },
+  {
+    id: 511,
+    name: "MongoDB",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+  },
+  {
     id: 6,
     name: "Git",
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
@@ -34,11 +44,11 @@ const mySkills = [
     name: "TailwindCSS",
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
   },
-  {
-    id: 8,
-    name: "Bootstrap",
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
-  },
+  // {
+  //   id: 8,
+  //   name: "Bootstrap",
+  //   url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+  // },
   {
     id: 9,
     name: "Jest",
