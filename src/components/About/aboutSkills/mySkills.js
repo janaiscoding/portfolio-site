@@ -69,10 +69,10 @@ const mySkills = [
     name: "Figma",
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
   },
-  {
-    id: 13,
-    name: "Webpack",
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg",
-  }
+  // {
+  //   id: 13,
+  //   name: "Webpack",
+  //   url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg",
+  // }
 ];
 export default mySkills;

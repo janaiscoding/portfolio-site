@@ -2,7 +2,53 @@ import clonner from "./clonnerboxd.web.app.webp";
 import umai from "./umai-restaurant.web.app.webp";
 import photo from "./PTAPP.webp";
 import battleships from './howtoplay.gif'
+import blogapi from './blog-client-preview.gif'
 const projects = [
+  {
+    id: 0,
+    title: "My Blog API 📝",
+    description: [
+      {
+        id: 111,
+        text: "Established a robust RESTful API with full CRUD capabilities with Express.js.",
+      },
+      {
+        id: 121,
+        text: "Implemented and configured a MongoDB database system.",
+      },
+      {
+        id: 131,
+        text: "Crafted a responsive and efficient frontend UI and a separate frontend CMS for admin actions in Next.js, with Caching, Accessibility, and React Server Components.",
+      },
+    ],
+    tech: [
+      {
+        id: 1111,
+        name: "Node.js",
+      },
+      {
+        id: 1222,
+        name: "MongoDB",
+      },
+      {
+        id: 1333,
+        name: "React",
+      },
+      {
+        id: 1444,
+        name: "REST API",
+      },
+      {
+        id: 1555,
+        name: "JWT",
+      },
+    ],
+    demoLink: "https://blog-client-smoky.vercel.app/",
+    repoLink: "https://github.com/janaiscoding/blog-api",
+    variant: "fromLeft",
+    image: blogapi,
+    translateY: "10",
+  },
   {
     id: 1,
     title: "Letterboxd Clone 🎥",
