@@ -54,7 +54,7 @@ const Skills = ({ inView }) => {
         </div>
       </div>
       <div className="self-end font-poppins300 text-grey text-sm mt-2">
-        *Open to work with stuff not listed above, currently learning MERN
+        *Open to work with stuff not listed above
       </div>
     </motion.section>
   );

@@ -73,7 +73,7 @@ const Hero = () => {
             I build elegant things for the web.
           </h3> */}
           <p className="font-poppins300 text-black text-xl my-4 md:w-[80%]">
-            I’m a highly driven Front-end Developer who is dedicated, passionate
+            I’m a highly driven Full-stack Developer who is dedicated, passionate
             and<br></br> eager to create{" "}
             <span className="font-poppins500 underline-on-hover">
               outstanding<br></br>
