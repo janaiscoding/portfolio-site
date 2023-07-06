@@ -43,7 +43,7 @@ const projects = [
         name: "JWT",
       },
     ],
-    demoLink: "https://blog-client-smoky.vercel.app/",
+    demoLink: "https://janaiscoding-blog.vercel.app/",
     repoLink: "https://github.com/janaiscoding/blog-api",
     variant: "fromLeft",
     image: blogapi,
