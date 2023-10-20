@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="">
       <div className="flex justify-between items-center px-6 max-w-6xl h-20 md:mx-auto ">
         <div className="font-overpass600 text-xs md:text-base text-softblack">
-          © {year}. Made with 🧡 by JanaIsCoding.
+          © {year}. Made with 💙 by JanaIsCoding.
         </div>
         <div className="flex gap-6 md:px-10">
           <Link to="https://www.linkedin.com/in/jana-istrate/">

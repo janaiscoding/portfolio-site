@@ -1,9 +1,56 @@
+import socializer from './socializer_preview_mobile.gif'
 import clonner from "./clonnerboxd.web.app.webp";
 import umai from "./umai-restaurant.web.app.webp";
 import photo from "./PTAPP.webp";
 import battleships from './howtoplay.gif'
 import blogapi from './blog-client-preview.gif'
+
 const projects = [
+  {
+    id: 'aa823',
+    title: "Socializer 🫶",
+    description: [
+      {
+        id: 111,
+        text: "Enabled users to manage friendship, upload images and posts ",
+      },
+      {
+        id: 121,
+        text: "Implemented a secure RESTful API, with JWT authentication and CRUD operations",
+      },
+      {
+        id: 131,
+        text: "Enhanced the user and developer experience by integrating the React Context API and React Custom Hooks",
+      },
+    ],
+    tech: [
+      {
+        id: 1111,
+        name: "Node.js",
+      },
+      {
+        id: 1222,
+        name: "MongoDB",
+      },
+      {
+        id: 1333,
+        name: "React",
+      },
+      {
+        id: 1444,
+        name: "REST API",
+      },
+      {
+        id: 1555,
+        name: "JWT",
+      },
+    ],
+    demoLink: "https://socializerme.vercel.app/",
+    repoLink: "https://github.com/janaiscoding/socializer/",
+    variant: "fromLeft",
+    image: socializer,
+    translateY: "10",
+  },
   {
     id: 0,
     title: "My Blog API 📝",
@@ -18,7 +65,7 @@ const projects = [
       },
       {
         id: 131,
-        text: "Crafted a responsive and efficient frontend UI and a separate frontend CMS for admin actions in Next.js, with Caching, Accessibility, and React Server Components.",
+        text: "Crafted a responsive and efficient frontend UI and a separate frontend CMS for admin actions in Next.js",
       },
     ],
     tech: [
