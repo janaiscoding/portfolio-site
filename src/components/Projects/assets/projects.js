@@ -1,4 +1,4 @@
-import socializer from './socializer_preview_mobile.gif'
+import socializer from './socializerme_preview.png'
 import clonner from "./clonnerboxd.web.app.webp";
 import umai from "./umai-restaurant.web.app.webp";
 import photo from "./PTAPP.webp";
@@ -25,6 +25,10 @@ const projects = [
     ],
     tech: [
       {
+        id: 1000,
+        name: "TypeScript",
+      },
+      {
         id: 1111,
         name: "Node.js",
       },
@@ -38,11 +42,7 @@ const projects = [
       },
       {
         id: 1444,
-        name: "REST API",
-      },
-      {
-        id: 1555,
-        name: "JWT",
+        name: "TailwindCSS",
       },
     ],
     demoLink: "https://socializerme.vercel.app/",
@@ -70,25 +70,25 @@ const projects = [
     ],
     tech: [
       {
-        id: 1111,
+        id: 1029,
+        name: "TypeScript",
+      },
+      {
+        id: 12983,
         name: "Node.js",
       },
       {
-        id: 1222,
+        id: 1111,
         name: "MongoDB",
       },
       {
-        id: 1333,
+        id: 1222,
         name: "React",
       },
       {
-        id: 1444,
-        name: "REST API",
-      },
-      {
-        id: 1555,
-        name: "JWT",
-      },
+        id: 1333,
+        name: "TailwindCSS",
+      }
     ],
     demoLink: "https://janaiscoding-blog.vercel.app/",
     repoLink: "https://github.com/janaiscoding/blog-api",
