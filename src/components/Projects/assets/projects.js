@@ -1,4 +1,4 @@
-import socializer from './socializerme_preview.png'
+import socializer from './socializerme_preview.gif'
 import clonner from "./clonnerboxd.web.app.webp";
 import umai from "./umai-restaurant.web.app.webp";
 import photo from "./PTAPP.webp";
