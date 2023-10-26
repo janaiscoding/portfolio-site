@@ -1,13 +1,13 @@
-import socializer from './socializerme_preview.gif'
+import socializer from "./socializerme_preview.gif";
 import clonner from "./clonnerboxd.web.app.webp";
 import umai from "./umai-restaurant.web.app.webp";
 import photo from "./PTAPP.webp";
-import battleships from './howtoplay.gif'
-import blogapi from './blog-client-preview.gif'
+import battleships from "./howtoplay.gif";
+// import blogapi from './blog-client-preview.gif'
 
 const projects = [
   {
-    id: 'aa823',
+    id: "aa823",
     title: "Socializer 🫶",
     description: [
       {
@@ -51,51 +51,51 @@ const projects = [
     image: socializer,
     translateY: "10",
   },
-  {
-    id: 0,
-    title: "My Blog API 📝",
-    description: [
-      {
-        id: 111,
-        text: "Established a robust RESTful API with full CRUD capabilities with Express.js.",
-      },
-      {
-        id: 121,
-        text: "Implemented and configured a MongoDB database system.",
-      },
-      {
-        id: 131,
-        text: "Crafted a responsive and efficient frontend UI and a separate frontend CMS for admin actions in Next.js",
-      },
-    ],
-    tech: [
-      {
-        id: 1029,
-        name: "TypeScript",
-      },
-      {
-        id: 12983,
-        name: "Node.js",
-      },
-      {
-        id: 1111,
-        name: "MongoDB",
-      },
-      {
-        id: 1222,
-        name: "React",
-      },
-      {
-        id: 1333,
-        name: "TailwindCSS",
-      }
-    ],
-    demoLink: "https://janaiscoding-blog.vercel.app/",
-    repoLink: "https://github.com/janaiscoding/blog-api",
-    variant: "fromLeft",
-    image: blogapi,
-    translateY: "10",
-  },
+  // {
+  //   id: 0,
+  //   title: "My Blog API 📝",
+  //   description: [
+  //     {
+  //       id: 111,
+  //       text: "Established a robust RESTful API with full CRUD capabilities with Express.js.",
+  //     },
+  //     {
+  //       id: 121,
+  //       text: "Implemented and configured a MongoDB database system.",
+  //     },
+  //     {
+  //       id: 131,
+  //       text: "Crafted a responsive and efficient frontend UI and a separate frontend CMS for admin actions in Next.js",
+  //     },
+  //   ],
+  //   tech: [
+  //     {
+  //       id: 1029,
+  //       name: "TypeScript",
+  //     },
+  //     {
+  //       id: 12983,
+  //       name: "Node.js",
+  //     },
+  //     {
+  //       id: 1111,
+  //       name: "MongoDB",
+  //     },
+  //     {
+  //       id: 1222,
+  //       name: "React",
+  //     },
+  //     {
+  //       id: 1333,
+  //       name: "TailwindCSS",
+  //     }
+  //   ],
+  //   demoLink: "https://janaiscoding-blog.vercel.app/",
+  //   repoLink: "https://github.com/janaiscoding/blog-api",
+  //   variant: "fromLeft",
+  //   image: blogapi,
+  //   translateY: "10",
+  // },
   {
     id: 1,
     title: "Letterboxd Clone 🎥",
