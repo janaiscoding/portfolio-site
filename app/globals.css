@@ -246,3 +246,6 @@ html {
   filter: grayscale(0%);
   background-color: #2d8aa498;
 }
+.hover-arrow {
+  transition: all .25s ease;
+}

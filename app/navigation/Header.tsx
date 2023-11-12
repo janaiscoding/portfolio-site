@@ -4,6 +4,7 @@ import Lottie from "lottie-react";
 import hamburgerMenu from "../../public/assets/Hamburger.json";
 // import "./navbar.css";
 import { motion } from "framer-motion";
+import Logo from "../ui_components/logo/Logo";
 
 const fromTop = {
   visible: {
@@ -55,7 +56,7 @@ const Header = () => {
               setIsOpen(false);
             }}
           >
-            {"{ J }"}
+            <Logo />
           </div>
           <div className="md:hidden w-[24px] h-[24px] z-[500]">
             <Lottie
@@ -82,12 +83,15 @@ const Header = () => {
             <a href="/#projects" className="nav-link" id="projects-link">
               Projects
             </a>
-            <a
-              href="/#contact"
-              className="flex items-center border-2 border-blue px-2 py-1 gap-2 hover-arrow hover:cursor-pointer hover:text-blue"
-              id="contact-link"
-            >
+            <a href="/#contact" className="nav-link" id="contact-link">
               Contact
+            </a>
+            <a
+              target="_blank"
+              href="/resume"
+              className="nav-link"
+            >
+              Resume
             </a>
           </nav>
         </motion.div>

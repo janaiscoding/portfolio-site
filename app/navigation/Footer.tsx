@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const Footer = () => {
@@ -14,7 +15,7 @@ const Footer = () => {
         </div>
         <div className="flex gap-6 md:px-10">
           <a target="_blank" href="https://www.linkedin.com/in/jana-istrate/">
-            <img
+            <Image
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
               width={24}
               height={24}
@@ -24,7 +25,7 @@ const Footer = () => {
             />
           </a>
           <a target="_blank" href="https://github.com/janaiscoding">
-            <img
+            <Image
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
               width={24}
               height={24}
