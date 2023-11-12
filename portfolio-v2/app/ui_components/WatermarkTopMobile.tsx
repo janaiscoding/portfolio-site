@@ -27,7 +27,7 @@ const WatermarkTopMobile = ({ title, top, left }: WatermarkProps) => {
       initial="hidden"
       variants={fromLeftWatermark}
       style={{ top: top, left: left }}
-      className={`absolute font-overpass600 text-2xl md:hidden text-black opacity-20 watermark`}
+      className={`absolute font-overpass600 text-2xl md:hidden text-black opacity-20 pointer-events-none`}
     >
       {` <${title}>`}
     </motion.div>

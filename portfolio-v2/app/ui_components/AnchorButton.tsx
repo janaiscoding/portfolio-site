@@ -13,8 +13,8 @@ const AnchorButton = ({
 
   return (
     <a
-      id={idAnchor}
-      target="_blank"
+      href={idAnchor}
+      // target="_blank"
       rel="noreferrer"
       aria-label="Click this link to see the about me section"
       className="flex items-center border-2 border-blue p-2 gap-2 hover-arrow hover:cursor-pointer"

@@ -19,7 +19,7 @@ const fromTop = {
 };
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false); 
+  const [isOpen, setIsOpen] = useState(false);
   const [initialState, setInitialState] = useState(true);
   const lottieRef = useRef<any>();
 
@@ -46,32 +46,31 @@ const Header = () => {
           variants={fromTop}
           initial="hidden"
           animate="visible"
-          className="flex justify-between items-center max-w-6xl h-14 md:mx-auto px-6 md:px-0"
+          className="flex justify-between items-center max-w-7xl h-14 md:mx-auto px-6 md:px-0"
         >
-          <a
-            href="/"
+          <div
             className="font-overpass600 text-blue logo-link self-center text-3xl md:text-3xl tracking-wider align-baseline hover:cursor-pointer"
             onClick={() => {
-              scrollTo(0, 0);
+              window.scrollTo(0, 0);
               setIsOpen(false);
             }}
           >
             {"{ J }"}
-          </a>
+          </div>
           <div className="md:hidden w-[24px] h-[24px]">
             <Lottie
               animationData={hamburgerMenu}
               loop={false}
               lottieRef={lottieRef}
               onClick={handleLottie}
-              className="md:hidden"
+              className="hidden"
             />
           </div>
           {/* DESKTOP NAVBAR */}
           <nav className="hidden md:flex gap-9 font-overpass text-base tracking-wider align-baseline hover:cursor-pointer">
             <button
               onClick={() => {
-                scroll(0, 0);
+                window.scroll(0, 0);
               }}
               className="nav-link"
               id="about-link"
@@ -92,8 +91,8 @@ const Header = () => {
       </motion.header>
       <nav
         className={`${isOpen ? "showNav" : "hideNav"} ${
-          initialState ? "hidden" : ""
-        } mobile-nav flex flex-col justify-center items-center gap-8 font-overpass600 text-2xl tracking-widest align-baseline`}
+          initialState ? "hidden" : " "
+        } mobile-nav flex flex-col justify-center items-center gap-8 font-overpass600 text-2xl tracking-widest align-baseline md:hidden`}
       >
         <a
           href="/#about"

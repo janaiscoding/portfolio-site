@@ -15,6 +15,7 @@ html {
   color: #18728b;
 }
 .underline-on-hover:hover {
+  cursor: default;
   background-size: 100% 88%;
   color: black;
 }
@@ -33,7 +34,7 @@ html {
 
 .showNav {
   -webkit-animation: showNav 0.8s ease forwards;
-  -moz-animation: showNav  0.8s ease forwards;
+  -moz-animation: showNav 0.8s ease forwards;
   -o-animation: showNav 0.8s ease forwards;
   animation: showNav 0.8s ease forwards;
 }
@@ -147,16 +148,65 @@ html {
   transition: transform 250ms ease-in-out;
   transform-origin: 0% 50%;
 }
-.hovered{
-    color: #7e1010;
+.hovered {
+  color: #7e1010;
 }
 .logo-link {
-  /* background: -webkit-linear-gradient(#f7d06b, #ed7372);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
   text-shadow: 2px 2px 4px #18728b0e;
   transition: all 150ms ease-in-out;
 }
 .logo-link:hover {
   text-shadow: 5px 3px 4px #18728b2b;
+}
+.icon {
+  filter: grayscale(60%) contrast(1);
+  background-color: #cdcdcd;
+  color: rgba(0, 0, 0, 0.652);
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+}
+.icon > img {
+  filter: grayscale(0%) !important;
+}
+.icon:hover {
+  transform: translateY(-5px) scale(1.1);
+  filter: grayscale(0%);
+  color: black;
+  background-color: #2d8aa498;
+}
+
+.ul-tech > li+li {
+  border-left: 2px solid #58656570;
+  padding-left: 0.25rem;
+}
+
+.card-content > a {
+  display: inline-block;
+  margin: 0;
+}
+.card-content > a:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #7e1010;
+  transform: scaleX(0.2);
+  transition: transform 250ms ease-in-out;
+}
+.card-content > a:hover:after {
+  transform: scaleX(1);
+  color: #7e1010;
+}
+.card-content > a:after {
+  transform-origin: 0% 50%;
+  color: #7e1010;
+}
+.card-content > a:hover {
+  color: #7e1010;
+  cursor: pointer;
+}
+.scrolling-pic{
+  transform: translateY(0%);
+  transition: transform 8s ease-in-out 0s;
+}
+.scrolling-pic:hover{
+  transform: translateY(-70%);
 }

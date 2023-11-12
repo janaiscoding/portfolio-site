@@ -28,9 +28,9 @@ const WatermarkBottomDesktop = ({ title, top, left }:WatermarkProps ) => {
       initial="hidden"
       variants={fromRightWatermark}
       style={{top: top, left: left}}
-      className={` hidden absolute md:block font-overpass600 text-2xl text-black opacity-20 overflow-hidden watermark`}
+      className={` hidden absolute md:block font-overpass600 text-2xl text-black opacity-20 overflow-hidden pointer-events-none`}
     >
-      {` </ ${title}>`}
+      {` <${title} />`}
     </motion.div>
   );
 };

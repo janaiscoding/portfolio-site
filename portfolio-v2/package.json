@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "^14.0.2",
     "@types/react-lottie": "^1.2.9",
     "framer-motion": "^10.16.4",
     "lottie-react": "^2.4.0",
