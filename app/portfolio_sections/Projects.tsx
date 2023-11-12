@@ -51,7 +51,7 @@ const Projects = () => {
             >
               GitHub
             </a>{" "}
-            to see what I'm currently working on!
+            to see what I&apos;m currently working on!
           </h1>
         </motion.div>
         <div className="projects-wrapper flex flex-col gap-12">

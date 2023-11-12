@@ -8,7 +8,7 @@ import Footer from "./navigation/Footer";
 import StickySocials from "./ui_components/StickySocials";
 
 export default function Home() {
-  // console.log(<About />);
+
   return (
     <main>
       <Header />

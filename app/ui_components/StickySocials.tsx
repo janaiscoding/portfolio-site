@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const fromLeft = {
   hidden: {
@@ -28,7 +29,7 @@ const StickySocials = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img
+        <Image
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
           width={24}
           height={24}
@@ -42,7 +43,7 @@ const StickySocials = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img
+        <Image
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
           width={24}
           height={24}

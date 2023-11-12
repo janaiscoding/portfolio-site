@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ButtonProps } from "../types/types";
+import Image from "next/image";
 
 const Button = ({ content, linkTo, selector }: ButtonProps) => {
   const [hovered, setHovered] = useState(false);
@@ -17,7 +18,7 @@ const Button = ({ content, linkTo, selector }: ButtonProps) => {
     >
       <p className={`font-poppins300 text-base tracking-tight`}>{content}</p>
       {selector === "github" ? (
-        <img
+        <Image
           src={
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
           }

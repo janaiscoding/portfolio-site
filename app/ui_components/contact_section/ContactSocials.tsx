@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const ContactSocials = () => {
@@ -12,7 +13,7 @@ const ContactSocials = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
             width={36}
             height={36}
@@ -26,7 +27,7 @@ const ContactSocials = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
             width={36}
             height={36}

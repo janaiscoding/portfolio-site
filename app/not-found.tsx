@@ -25,7 +25,7 @@ export default function NotFound() {
       <h1 className="text-4xl font-overpass600">
         Hmm. Seems you are on the wrong page somehow 🤔
       </h1>
-      <Link href="/" className="flex items-center border-2 border-blue p-2 gap-2 hover-arrow hover:cursor-pointer">Let's get you back home!</Link>
+      <Link href="/" className="flex items-center border-2 border-blue p-2 gap-2 hover-arrow hover:cursor-pointer">Let&apos;s get you back home!</Link>
     </motion.div>
   );
 }
