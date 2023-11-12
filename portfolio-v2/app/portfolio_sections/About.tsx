@@ -40,7 +40,7 @@ const About = () => {
           initial="hidden"
           className="basis-full"
         >
-          <Heading title={"About Me"} linkTo={"about"} />
+          <Heading title={"About Me"} linkTo={"/#about"} />
           <AboutMeText />
         </motion.div>
         <Skills inView={inView} />

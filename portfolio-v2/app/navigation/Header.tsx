@@ -41,7 +41,7 @@ const Header = () => {
   }, []);
   return (
     <>
-      <motion.header className="sticky top-0 z-50 bg-white">
+      <motion.header className="sticky top-0 z-50 bg-white shadow-md">
         <motion.div
           variants={fromTop}
           initial="hidden"
@@ -49,7 +49,7 @@ const Header = () => {
           className="flex justify-between items-center max-w-7xl h-14 md:mx-auto px-6 md:px-0"
         >
           <div
-            className="font-overpass600 text-blue logo-link self-center text-3xl md:text-3xl tracking-wider align-baseline hover:cursor-pointer"
+            className="font-overpass600 z-[500] text-black md:text-blue logo-link self-center text-3xl md:text-3xl tracking-wider align-baseline hover:cursor-pointer"
             onClick={() => {
               window.scrollTo(0, 0);
               setIsOpen(false);
@@ -57,17 +57,16 @@ const Header = () => {
           >
             {"{ J }"}
           </div>
-          <div className="md:hidden w-[24px] h-[24px]">
+          <div className="md:hidden w-[24px] h-[24px] z-[500]">
             <Lottie
               animationData={hamburgerMenu}
               loop={false}
               lottieRef={lottieRef}
               onClick={handleLottie}
-              className="hidden"
             />
           </div>
           {/* DESKTOP NAVBAR */}
-          <nav className="hidden md:flex gap-9 font-overpass text-base tracking-wider align-baseline hover:cursor-pointer">
+          <nav className="hidden md:flex gap-9 font-overpass items-center justify-center text-lg tracking-wider align-baseline hover:cursor-pointer">
             <button
               onClick={() => {
                 window.scroll(0, 0);
@@ -83,7 +82,11 @@ const Header = () => {
             <a href="/#projects" className="nav-link" id="projects-link">
               Projects
             </a>
-            <a href="/#contact" className="nav-link" id="contact-link">
+            <a
+              href="/#contact"
+              className="flex items-center border-2 border-blue px-2 py-1 gap-2 hover-arrow hover:cursor-pointer hover:text-blue"
+              id="contact-link"
+            >
               Contact
             </a>
           </nav>
