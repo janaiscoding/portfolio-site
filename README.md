@@ -11,6 +11,7 @@
 <details>
 <summary> See preview on mobile 📱 </summary>
 <br>
+
 ![Gif preview personal portfolio - Mobile](https://github.com/janaiscoding/portfolio-site/blob/main/public/assets/portfolio-mobile.gif)
 </details>
 
