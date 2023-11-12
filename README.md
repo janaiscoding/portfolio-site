@@ -6,11 +6,13 @@
 
 ### On Browser
 
-![Gif preview personal portfolio - Desktop](./src/assets/portfolio-desktop.gif)
+![Gif preview personal portfolio - Desktop](https://github.com/janaiscoding/portfolio-site/blob/main/public/assets/portfolio-desktop.gif)
 
-### On Mobile
-
-![Gif preview personal portfolio - Mobile](/src/assets/portfolio-mobile.gif)
+<details>
+<summary> See preview on mobile 📱 </summary>
+<br>
+![Gif preview personal portfolio - Mobile](https://github.com/janaiscoding/portfolio-site/blob/main/public/assets/portfolio-mobile.gif)
+</details>
 
 ## Getting Started
 
