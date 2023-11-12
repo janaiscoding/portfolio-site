@@ -26,7 +26,7 @@ const HeroText = () => {
       <h1 className="font-overpass600 text-black text-5xl tracking-wide">
         Jana Istrate
       </h1>
-      <p className="text-black text-xl my-4 md:w-[80%]">
+      <p className="text-black text-xl mb-10 mt-2 md:w-[80%]">
         I’m a highly driven developer based in Germany who is
         dedicated, passionate and eager to create{" "}
         <span className="font-poppins500 underline-on-hover">outstanding</span>{" "}

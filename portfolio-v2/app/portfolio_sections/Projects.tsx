@@ -35,33 +35,39 @@ const Projects = () => {
 
   return (
     <div
-      className="projects h-full overflow-hidden relative"
+      className="projects h-full overflow-hidden relative "
       id="projects"
       ref={ref}
     >
-      <div className="flex flex-col gap-6 px-6 md:max-w-7xl md:mx-auto pb-[10vh] pt-[15vh] md:px-0">
+      <div className="flex flex-col gap-12 md:gap-6 md:justify-between md:max-w-7xl m-auto my-[5vh] p-6 md:p-0 md:my-[15vh]">
         <motion.div variants={fromLeft} initial="hidden" animate={controls}>
           <Heading title={"Projects"} linkTo={"/#projects"} />
-          <h1 className="text-xl text-grey font-overpass600 tracking-wider mb-4">
-            Follow my <a target="_blank" href="https://www.github.com/janaiscoding" className="text-blue hover:text-blue">GitHub</a> to see what I'm currently working on!
+          <h1 className="text-xl text-grey font-overpass600">
+            Follow my{" "}
+            <a
+              target="_blank"
+              href="https://www.github.com/janaiscoding"
+              className="text-blue hover:text-blue"
+            >
+              GitHub
+            </a>{" "}
+            to see what I'm currently working on!
           </h1>
         </motion.div>
-        <div className="projects-wrapper flex flex-col gap-14">
+        <div className="projects-wrapper flex flex-col gap-12">
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
-        <div className="self-center">
-          <Button
-            content={"See more projects"}
-            linkTo={
-              "https://github.com/JanaIsCoding#%EF%B8%8F-finished-projects"
-            }
-            selector=""
-          />
-        </div>
+        <div className="flex self-center justify-center">
+        <Button
+          content={"See more projects"}
+          linkTo={"https://github.com/JanaIsCoding#%EF%B8%8F-finished-projects"}
+          selector=""
+        />
       </div>
-      <WatermarkBottomDesktop title={"Projects"} top={"95%"} left={"68%"} />
+      </div>
+      <WatermarkBottomDesktop title={"Projects"} top={"95%"} left={"80%"} />
       <WatermarkBottomMobile title={"Projects"} top={"99%"} left={"60%"} />
     </div>
   );

@@ -36,7 +36,7 @@ const Skills = ({ inView }: { inView: boolean }) => {
       <h2 className="text-2xl text-grey font-overpass600 tracking-wider text-center md:text-end my-4 hover:text-blue hover:cursor-default">
         MY SKILLS
       </h2>
-      <div className="flex flex-wrap items-end self-end justify-center md:justify-end gap-4 p-2">
+      <div className="flex flex-wrap items-end self-end justify-start md:justify-end gap-2 md:gap-4">
         {allSkills}
         <div className="flex gap-4 justify-end items-end p-2 icon">
           <svg
