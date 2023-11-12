@@ -75,7 +75,7 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
         </div>
       </div>
       <div className="basis-full flex justify-center overflow-hidden border-solid border-b-2 border-grey md:border-none">
-        <a href={project.demoLink} className="self-start">
+        <a href={project.demoLink} target="_blank" className="self-start">
           <Image
             src={project.image}
             height={400}
