@@ -1,6 +1,6 @@
 # Jana Istrate Personal Portfolio
 
-- [Live](https://jana-istrate.web.app/).
+- [Live](https://jana-istrate.vercel.app/).
 
 ## Live Demo
 
