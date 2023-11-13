@@ -27,7 +27,7 @@ const Contact = () => {
           </h1>
           <div className="flex flex-col items-center justify-between gap-6 my-12">
             <ContactMail />
-            <h1 className="text-softblack tracking-widest">OR</h1>
+            <h1 className="text-black tracking-widest">OR</h1>
             <ContactSocials />
           </div>
           <div className="flex items-center w-full">
