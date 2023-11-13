@@ -1,11 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-body,
-html {
-  background-color: #f8f7f7;
+:root {
+  --blue: "#18728b";
+  --grey: "#586565";
+  --white: "#F8F7F7";
+  --black: "#222326";
+  --orange: "#ED7372";
+  --red: "#7e1010";
 }
+
 .underline-on-hover {
   background-image: linear-gradient(120deg, #f7d06b, #ed7372);
   background-repeat: no-repeat;
@@ -142,32 +146,32 @@ html {
 .nav-link:after {
   display: block;
   content: "";
-  border-bottom: solid 2px #7e1010;
+  border-bottom: solid 2px #ED7372;
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
 }
 .nav-link:hover:after {
   transform: scaleX(1);
-  color: #7e1010;
+  color: #ED7372;
   transform-origin: 0% 50%;
 }
 .nav-link:after {
   transform-origin: 0% 50%;
-  color: #7e1010;
+  color: #ED7372;
 }
 .nav-link:hover {
-  color: #7e1010;
+  color: #ED7372;
 }
 .hovered::after {
   display: block;
   content: "";
-  color: #7e1010;
+  color: #ED7372;
   border-bottom: solid 2px #7e1010;
   transition: transform 250ms ease-in-out;
   transform-origin: 0% 50%;
 }
 .hovered {
-  color: #7e1010;
+  color: #ED7372;
 }
 .logo-link {
   text-shadow: 2px 2px 4px #18728b0e;
@@ -176,10 +180,14 @@ html {
 .logo-link:hover {
   text-shadow: 5px 3px 4px #18728b2b;
 }
+
 .icon {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+  align-items: flex-end;
+  justify-content: space-between;
   filter: grayscale(60%) contrast(1);
-  background-color: #cdcdcd;
-  color: rgba(0, 0, 0, 0.652);
   border-radius: 3px;
   transition: all 0.2s ease-in-out;
 }
@@ -205,21 +213,21 @@ html {
 .project-title:after {
   display: block;
   content: "";
-  border-bottom: solid 2px #7e1010;
+  border-bottom: solid 2px #ED7372;
   transform: scaleX(0.2);
   transition: transform 250ms ease-in-out;
 }
 .project-title:hover:after {
   transform: scaleX(1);
-  color: #7e1010;
+  color: #ED7372;
 }
 .project-title:after {
   transform-origin: 0% 50%;
-  color: #7e1010;
+  color: #ED7372;
   cursor: pointer;
 }
 .project-title:hover {
-  color: #7e1010;
+  color: #ED7372;
   cursor: pointer;
 }
 .scrolling-pic {
@@ -232,11 +240,9 @@ html {
 .separator {
   flex: 1 1;
   height: 1px;
-  background-color: #222326;
 }
 .socials {
-  filter: grayscale(80%) contrast(1);
-  background-color: #cdcdcd;
+  filter: grayscale(30%) contrast(1);
   color: hsla(0, 0%, 30%, 1);
   border-radius: 0px 3px 3px 0px;
   transition: all 0.2s ease-in-out;
@@ -247,5 +253,5 @@ html {
   background-color: #2d8aa498;
 }
 .hover-arrow {
-  transition: all .25s ease;
+  transition: all 0.25s ease;
 }

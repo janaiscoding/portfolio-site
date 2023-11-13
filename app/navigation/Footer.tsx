@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="">
       <div className="flex justify-between items-center px-6 max-w-6xl h-20 md:mx-auto ">
-        <div className="font-overpass600 text-xs md:text-base text-black">
+        <div className="font-overpass600 text-xs md:text-base">
           © {year}. Made with 💙 by JanaIsCoding.
         </div>
         <div className="flex gap-6 md:px-10">

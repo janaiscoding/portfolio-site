@@ -35,7 +35,7 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
       animate={controls}
       variants={fromLeft}
       initial="hidden"
-      className="card flex flex-col-reverse gap-6 md:gap-0 md:flex-row p-2 md:p-6 h-[44rem] md:h-[30rem] lg:h-96 bg-slate-50 shadow-xl hover:shadow-2xl"
+      className="card flex flex-col-reverse gap-6 md:gap-0 md:flex-row p-2 md:p-6 h-[44rem] md:h-[30rem] lg:h-96 bg-slate-50 dark:bg-neutral-900  shadow-xl hover:shadow-2xl"
     >
       <div className="card-content flex flex-col justify-between items-start border-solid border-grey md:border-r-2 basis-full">
         <div>
@@ -47,12 +47,12 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
           >
             {project.title}
           </a>
-          <ul className="flex ul-tech text-grey text-base gap-1 flex-wrap md:text-lg font-poppins500 mt-2">
+          <ul className="flex ul-tech text-grey dark:text-white text-base gap-1 flex-wrap md:text-lg font-poppins500 mt-2">
             {project.tech.map((tech) => (
               <li key={tech.id}>{tech.name}</li>
             ))}
           </ul>
-          <ul className="font-poppins text-sm md:text-base text-black mt-6">
+          <ul className="font-poppins text-sm md:text-base mt-6">
             {project.description.map((detail) => (
               <li key={detail.id} className="flex gap-4 items-center">
                 <p className="basis-11/12">👉 {detail.text}</p>

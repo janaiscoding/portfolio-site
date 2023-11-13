@@ -33,12 +33,12 @@ const Skills = ({ inView }: { inView: boolean }) => {
       variants={fromRight}
       className="flex flex-col basis-full"
     >
-      <h2 className="text-2xl text-grey font-overpass600 tracking-wider text-center md:text-end my-4 hover:text-blue hover:cursor-default">
+      <h2 className="text-2xl font-overpass600 tracking-wider text-grey dark:text-white/80 text-center md:text-end my-4 hover:cursor-default">
         MY SKILLS
       </h2>
       <div className="flex flex-wrap items-end self-end justify-start md:justify-end gap-2 md:gap-4">
         {allSkills}
-        <div className="flex gap-4 justify-end items-end p-2 icon">
+        <div className="flex gap-4 justify-end items-end p-2 icon bg-[#cdcdcd] dark:bg-black hover:bg-blue text-black/80 hover:text-white dark:text-white/90 dark:hover:bg-blue">
           <svg
             xmlns="http:www.w3.org/2000/svg"
             viewBox="0 0 14 21"

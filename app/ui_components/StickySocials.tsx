@@ -22,7 +22,7 @@ const StickySocials = () => {
       variants={fromLeft}
       initial="hidden"
       animate="visible"
-      className="hidden xl:flex flex-col gap-4 fixed top-[80%] p-3 left-[0%] socials"
+      className="hidden xl:flex flex-col gap-4 fixed top-[80%] p-3 left-[0%] socials bg-[#cdcdcd] dark:bg-blue"
     >
       <a
         href="https://www.linkedin.com/in/jana-istrate/"

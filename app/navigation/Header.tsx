@@ -2,7 +2,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Lottie from "lottie-react";
 import hamburgerMenu from "../../public/assets/Hamburger.json";
-// import "./navbar.css";
 import { motion } from "framer-motion";
 
 const fromTop = {
@@ -39,17 +38,18 @@ const Header = () => {
   useEffect(() => {
     lottieRef.current!.stop();
   }, []);
+
   return (
     <>
-      <motion.header className="sticky top-0 z-50 bg-white shadow-md">
+      <motion.header className="sticky top-0 z-50 bg-white dark:bg-zinc-950 shadow-md">
         <motion.div
           variants={fromTop}
           initial="hidden"
           animate="visible"
-          className="flex justify-between items-center max-w-7xl h-14 md:mx-auto px-6 md:px-0"
+          className="flex justify-between items-center max-w-6xl h-14 md:mx-auto px-6 md:px-0"
         >
           <div
-            className="font-overpass600 z-[500] text-black md:text-blue logo-link self-center text-3xl md:text-3xl tracking-wider align-baseline hover:cursor-pointer"
+            className="font-overpass600 z-[500] text-blue logo-link self-center text-3xl md:text-3xl tracking-wider align-baseline hover:cursor-pointer"
             onClick={() => {
               window.scrollTo(0, 0);
               setIsOpen(false);
@@ -66,7 +66,7 @@ const Header = () => {
             />
           </div>
           {/* DESKTOP NAVBAR */}
-          <nav className="hidden md:flex gap-9 font-overpass items-center justify-center text-lg tracking-wider align-baseline hover:cursor-pointer">
+          <nav className="hidden md:flex gap-9 font-overpass items-center justify-center text-md tracking-wider align-baseline hover:cursor-pointer">
             <button
               onClick={() => {
                 window.scroll(0, 0);
@@ -94,8 +94,17 @@ const Header = () => {
       <nav
         className={`${isOpen ? "showNav" : "hideNav"} ${
           initialState ? "hidden" : " "
-        } mobile-nav flex flex-col justify-center items-center gap-8 font-overpass600 text-2xl tracking-widest align-baseline md:hidden`}
+        } mobile-nav flex flex-col justify-center text-black items-center gap-8 font-overpass600 text-2xl tracking-widest align-baseline md:hidden`}
       >
+        <button
+          onClick={() => {
+            setIsOpen(false);
+            handleLottie();
+            window.scroll(0, 0);
+          }}
+        >
+          HOME
+        </button>
         <a
           href="/#about"
           onClick={() => {

@@ -4,21 +4,25 @@ const AboutMeText = () => {
       <p className="text-lg">
         I believe in <span className="font-poppins500">the power</span> of
         consistency and{" "}
-        <span className="font-poppins500 underline-on-hover">discipline.</span>{" "}
+        <span className="font-poppins500 underline-on-hover dark:text-white dark:hover:text-black">
+          discipline.
+        </span>{" "}
       </p>
       <p>
         I am an engineering graduate that loves to be an{" "}
-        <span className="font-poppins500 underline-on-hover">
+        <span className="font-poppins500 underline-on-hover dark:text-white dark:hover:text-black">
           impactful
         </span>{" "}
-        member<br></br> of the ever-evolving field of web development.
+        member of the ever-evolving field of web development.
       </p>
       <p>
         Beyond coding, I enjoy working out, playing ARPGs with my friends or
         watching a good movie.
       </p>
       <p>
-        <span className="font-poppins500 underline-on-hover">Thank you</span>{" "}
+        <span className="font-poppins500 underline-on-hover dark:text-white dark:hover:text-black">
+          Thank you
+        </span>{" "}
         for getting to know me!
       </p>
     </article>

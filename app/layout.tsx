@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins300.variable} ${poppins400.variable} ${poppins500.variable} ${overpass600.variable} ${overpass.variable} font-sans`}
+        className={`${poppins300.variable} ${poppins400.variable} ${poppins500.variable} ${overpass600.variable} ${overpass.variable} font-sans bg-white text-black dark:text-white dark:bg-zinc-950`}
       >
         {children}
       </body>
