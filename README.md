@@ -4,16 +4,9 @@
 
 ## Live Demo
 
-### On Browser
+### Preview
 
-![Gif preview personal portfolio - Desktop](https://github.com/janaiscoding/portfolio-site/blob/main/public/assets/portfolio-desktop.gif)
-
-<details>
-<summary> See preview on mobile 📱 </summary>
-<br>
-
-![Gif preview personal portfolio - Mobile](https://github.com/janaiscoding/portfolio-site/blob/main/public/assets/portfolio-mobile.gif)
-</details>
+![Preview personal portfolio - Desktop](</public/assets/jana-istrate.vercel.app_%20(1).png>)
 
 ## Getting Started
 
@@ -28,7 +21,7 @@ npm run dev
 
 # Built with
 
-## Technologies 
+## Technologies
 
 - ReactJs, Javascript
 - CSS3, TailwindCSS, Framer Motion
