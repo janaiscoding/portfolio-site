@@ -81,7 +81,7 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
             height={400}
             width={500}
             alt={`preview of ${project.title}`}
-            className={`scrolling-pic ${
+            className={`scrolling-pic  ${
               isHov && `transform: translateY(-${project.translateY}%)`
             }`}
             onMouseEnter={() => setHov(true)}

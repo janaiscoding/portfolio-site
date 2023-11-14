@@ -1,4 +1,4 @@
-import socializer from "../../../public/projects_assets/socializerme_preview.gif";
+import socializer from "../../../public/projects_assets/socializerme.vercel.app_.webp";
 import clonner from "../../../public/projects_assets/clonnerboxd.web.app.webp";
 import umai from "../../../public/projects_assets/umai-restaurant.web.app.webp";
 import photo from "../../../public/projects_assets/PTAPP.webp";
@@ -47,7 +47,7 @@ const projects = [
     repoLink: "https://github.com/janaiscoding/socializer/",
     variant: "fromLeft",
     image: socializer,
-    translateY: "10",
+    translateY: "-10",
   },
   {
     id: "clonnerboxd",

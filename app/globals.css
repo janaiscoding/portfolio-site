@@ -235,7 +235,7 @@
   transition: transform 8s ease-in-out 0s;
 }
 .scrolling-pic:hover {
-  transform: translateY(-70%);
+  transform: translateY(-50%);
 }
 .separator {
   flex: 1 1;
