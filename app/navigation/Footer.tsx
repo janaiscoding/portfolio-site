@@ -11,7 +11,11 @@ const Footer = () => {
     <footer className="">
       <div className="flex justify-between items-center px-6 max-w-6xl h-20 md:mx-auto ">
         <div className="font-overpass600 text-xs md:text-base">
-          © {year}. Made with 💙 by JanaIsCoding.
+          © {year}. Made with 💙 by{" "}
+          <span className="text-blue hover:text-orange hover:cursor-pointer">
+            JanaIsCoding
+          </span>
+          .
         </div>
         <div className="flex gap-6 md:px-10">
           <a target="_blank" href="https://www.linkedin.com/in/jana-istrate/">

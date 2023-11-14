@@ -35,9 +35,9 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
       animate={controls}
       variants={fromLeft}
       initial="hidden"
-      className="card flex flex-col-reverse gap-6 md:gap-0 md:flex-row p-2 md:p-6 h-[44rem] md:h-[30rem] lg:h-96 bg-slate-50 dark:bg-neutral-900  shadow-xl hover:shadow-2xl"
+      className="card flex flex-col-reverse gap-6 md:gap-0 md:flex-row p-2 md:p-6 h-[44rem] md:h-[30rem] lg:h-96 bg-slate-50 dark:bg-neutral-900 shadow-xl hover:shadow-2xl"
     >
-      <div className="card-content flex flex-col justify-between items-start border-solid border-grey md:border-r-2 basis-full">
+      <div className="card-content flex flex-col justify-between items-start border-solid border-grey/90 md:border-r basis-full">
         <div>
           <a
             target="_blank"

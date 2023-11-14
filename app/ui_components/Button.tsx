@@ -10,7 +10,7 @@ const Button = ({ content, linkTo, selector }: ButtonProps) => {
       href={linkTo}
       target="_blank"
       rel="noreferrer"
-      className={`flex items-center border-2 border-blue p-2 gap-2 hover-arrow ${
+      className={`flex items-center bg-blue border-2 text-white border-blue p-2 gap-2 hover-arrow ${
         hovered && "scale-105"
       }`}
       onMouseEnter={() => setHovered(true)}

@@ -1,8 +1,11 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import Lottie from "lottie-react";
 import hamburgerMenu from "../../public/assets/Hamburger.json";
 import { motion } from "framer-motion";
+import { ThemeContext } from "../context/ThemeContext";
+import Sun from "../ui_components/icons/Sun";
+import Moon from "../ui_components/icons/Moon";
 
 const fromTop = {
   visible: {
@@ -20,6 +23,7 @@ const fromTop = {
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [initialState, setInitialState] = useState(true);
+  const themeContext = useContext(ThemeContext);
   const lottieRef = useRef<any>();
 
   const handleLottie = () => {
@@ -38,10 +42,27 @@ const Header = () => {
   useEffect(() => {
     lottieRef.current!.stop();
   }, []);
+  useEffect(() => {
+    if (document.documentElement.classList.contains("dark")) {
+      themeContext.setCurrent("dark");
+    } else {
+      themeContext.setCurrent("light");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
+  const handleThemeToggle = () => {
+    if (themeContext.current === "dark") {
+      document.documentElement.classList.remove("dark");
+      themeContext.setCurrent("light");
+    } else {
+      document.documentElement.classList.add("dark");
+      themeContext.setCurrent("dark");
+    }
+  };
   return (
     <>
-      <motion.header className="sticky top-0 z-50 bg-white dark:bg-zinc-950 shadow-md">
+      <motion.header className="sticky top-0 z-50 bg-white dark:bg-[#0F0F0F] shadow-md">
         <motion.div
           variants={fromTop}
           initial="hidden"
@@ -88,6 +109,9 @@ const Header = () => {
             <a target="_blank" href="/resume" className="nav-link">
               Resume
             </a>
+            <div onClick={handleThemeToggle} className="hover:cursor-pointer">
+              {themeContext.current === "dark" ? <Sun /> : <Moon />}
+            </div>
           </nav>
         </motion.div>
       </motion.header>

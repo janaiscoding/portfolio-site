@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Overpass, Poppins } from "next/font/google";
 import "./globals.css";
+import { ThemeContextProvider } from "./context/ThemeContext";
 
 const poppins300 = Poppins({
   subsets: ["latin"],
@@ -39,11 +40,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body
-        className={`${poppins300.variable} ${poppins400.variable} ${poppins500.variable} ${overpass600.variable} ${overpass.variable} font-sans bg-white text-black dark:text-white dark:bg-zinc-950`}
+        className={`${poppins300.variable} ${poppins400.variable} ${poppins500.variable} ${overpass600.variable} ${overpass.variable} font-sans bg-white text-black dark:text-white dark:bg-[#0F0F0F]`}
       >
-        {children}
+        <ThemeContextProvider>{children}</ThemeContextProvider>
       </body>
     </html>
   );
