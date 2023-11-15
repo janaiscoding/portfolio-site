@@ -18,6 +18,7 @@ const config: Config = {
         poppins300: [`var(--font-poppins-300)`],
       },
       colors: {
+        brightblue: "#66cae5",
         blue: "#18728b",
         grey: "#586565",
         white: "#F8F7F7",

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { WatermarkProps } from "../types/types";
+import { WatermarkProps } from "../../types/types";
 
 const fromRightWatermark = {
   visible: {
@@ -14,7 +14,7 @@ const fromRightWatermark = {
   },
 };
 
-const WatermarkBottomMobile = ({ title, top, left } : WatermarkProps) => {
+const WatermarkBottomMobile = ({ title }: { title: string }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
   useEffect(() => {
@@ -27,8 +27,7 @@ const WatermarkBottomMobile = ({ title, top, left } : WatermarkProps) => {
       animate={controls}
       initial="hidden"
       variants={fromRightWatermark}
-      style={{top: top, left: left}}
-      className={` md:hidden absolute font-overpass600 text-2xl text-black opacity-20 pointer-events-none`}
+      className="mr-[10vh] md:hidden absolute font-overpass600 text-2xl text-black opacity-20 pointer-events-none"
     >
       {` </ ${title}>`}
     </motion.div>

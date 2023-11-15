@@ -3,6 +3,7 @@ import Icon from "./Icon";
 import { mySkills } from "./mySkills";
 
 import { useAnimation, motion } from "framer-motion";
+import FramerMotion from "./FramerMotion";
 const fromRight = {
   visible: {
     opacity: 1,
@@ -38,26 +39,13 @@ const Skills = ({ inView }: { inView: boolean }) => {
       </h2>
       <div className="flex flex-wrap items-end self-end justify-start md:justify-end gap-2 md:gap-4">
         {allSkills}
-        <div className="flex gap-4 justify-end items-end p-2 icon bg-[#cdcdcd] dark:bg-black hover:bg-blue text-black/80 hover:text-white dark:text-white/90 dark:hover:bg-blue">
-          <svg
-            xmlns="http:www.w3.org/2000/svg"
-            viewBox="0 0 14 21"
-            role="presentation"
-            width={28}
-            height={28}
-          >
-            <path
-              d="M0 0h14v7H7zm0 7h7l7 7H7v7l-7-7z"
-              fill="currentColor"
-            ></path>
-          </svg>
-          <p className="font-overpass600 text-center">Framer Motion</p>
-        </div>
+        <FramerMotion />
       </div>
-      <div className="self-end font-poppins300 text-grey text-sm mt-2">
+      <div className="self-end font-poppins300 text-grey dark:text-white/90 text-sm mt-2">
         *Open to work with stuff not listed above
       </div>
     </motion.section>
   );
 };
+
 export default Skills;

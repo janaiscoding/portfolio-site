@@ -1,15 +1,13 @@
-import WatermarkBottomDesktop from "../WatermarkBottomDesktop";
-import WatermarkBottomMobile from "../WatermarkBottomMobile";
+import WatermarkBottomDesktop from "../watermarks_symbols/WatermarkBottomDesktop";
+import WatermarkBottomMobile from "../watermarks_symbols/WatermarkBottomMobile";
 
 const WatermarksAbout = () => {
   return (
     <>
       <WatermarkBottomDesktop
         title={"AboutMe onRead={() => setThankful(true)}"}
-        top={"95%"}
-        left={"60%"}
       />
-      <WatermarkBottomMobile title={"AboutMe"} top={"97%"} left={"50%"} />
+      <WatermarkBottomMobile title={"AboutMe"} />
     </>
   );
 };

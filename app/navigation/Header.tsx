@@ -89,7 +89,7 @@ const Header = () => {
                 window.scroll(0, 0);
               }}
               className="nav-link"
-              id="about-link"
+              id="home-link"
             >
               Home
             </button>

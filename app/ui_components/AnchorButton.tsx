@@ -5,30 +5,25 @@ import Image from "next/image";
 const AnchorButton = ({
   content,
   idAnchor,
+  alt,
 }: {
   content: string;
   idAnchor: string;
+  alt: string;
 }) => {
   const [hovered, setHovered] = useState(false);
 
   return (
     <a
       href={idAnchor}
-      // target="_blank"
       rel="noreferrer"
+      aria-labelledby={alt}
       aria-label="Click this link to see the following section"
       className="flex items-center dark:bg-blue border-2 dark:text-white border-blue p-2 gap-2 hover-arrow hover:cursor-pointer"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
       <p className={`font-poppins300 text-base tracking-tight`}>{content}</p>
-      {/* <Image
-        src={ArrowRight}
-        className={`w-max h-max hover-arrow ${
-          hovered ? "animate-[wiggle_1s_ease-in-out_infinite]" : ""
-        }`}
-        alt="arrow right indicator"
-      /> */}
       <div
         className={`w-max h-max hover-arrow ${
           hovered ? "animate-[wiggle_1s_ease-in-out_infinite]" : ""
