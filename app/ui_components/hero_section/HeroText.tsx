@@ -17,7 +17,7 @@ const HeroText = () => {
   return (
     <motion.div
       ref={ref}
-      className="flex flex-col items-start tracking-wide basis-full"
+      className="flex flex-col items-start justify-center tracking-wide basis-full"
       animate={controls}
       variants={fromLeft}
       initial="hidden"
