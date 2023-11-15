@@ -1,12 +1,12 @@
 # Jana Istrate Personal Portfolio
 
-- [Live](https://jana-istrate.vercel.app/).
+- See my personal portfolio here: [Live](https://www.janaistrate.com/).
 
 ## Live Demo
 
 ### Preview
 
-![Preview personal portfolio - Desktop](/public/www.janaistrate.com_.png)
+![Preview personal portfolio - Desktop](/public/assets/portofolio_preview.png)
 
 ## Getting Started
 
