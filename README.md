@@ -6,7 +6,7 @@
 
 ### Preview
 
-![Preview personal portfolio - Desktop](/public/assets/portofolio_preview.png)
+![Preview personal portfolio - Desktop](</public/assets/www.janaistrate.com_%20(1).png>)
 
 ## Getting Started
 
