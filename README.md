@@ -6,7 +6,7 @@
 
 ### Preview
 
-![Preview personal portfolio - Desktop](</public/assets/jana-istrate.vercel.app_%20(1).png>)
+![Preview personal portfolio - Desktop](/public/www.janaistrate.com_.png)
 
 ## Getting Started
 
