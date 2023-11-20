@@ -27,20 +27,18 @@ const HeroText = () => {
       </p>
       <h1 className="font-overpass600 text-5xl tracking-wide">Jana Istrate</h1>
       <p className="text-xl mb-10 mt-2 md:w-[80%]">
-        I am a Full-Stack Developer that is highly driven by strong results, passionate
-        about problem-solving and inspired by{" "}
+        Results-driven developer who is passionate about creating smooth and
+        engaging web{" "}
         <span className="font-poppins500 underline-on-hover dark:text-brightblue dark:hover:text-black">
-          {" "}
-          outstanding
+          experiences
         </span>{" "}
-        digital experiences.
-
+        for the users.
       </p>
 
       <AnchorButton
         content={"Contact me"}
         idAnchor="#contact"
-        alt="Go to contact page"
+        alt="Go to contact me section"
       />
     </motion.div>
   );

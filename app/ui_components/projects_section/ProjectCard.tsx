@@ -47,7 +47,7 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
           >
             {project.title}
           </a>
-          <ul className="flex ul-tech text-grey dark:text-white text-base gap-1 flex-wrap md:text-lg font-poppins500 mt-2">
+          <ul className="flex ul-tech text-grey dark:text-white/70 text-base gap-1 flex-wrap md:text-lg font-poppins500 mt-2">
             {project.tech.map((tech) => (
               <li key={tech.id}>{tech.name}</li>
             ))}
@@ -55,7 +55,7 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
           <ul className="font-poppins my-4">
             {project.description.map((detail) => (
               <li key={detail.id} className="flex gap-4 items-center">
-                <p className="basis-11/12">👉 {detail.text}</p>
+                <p className="basis-11/12"> <span className="text-blue">•</span> {detail.text}</p>
               </li>
             ))}
           </ul>

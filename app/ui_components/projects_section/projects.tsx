@@ -1,8 +1,8 @@
-import socializer from "../../../public/projects_assets/socializerme.vercel.app_.webp";
+import socializer from "../../../public/projects_assets/socializerme.vercel.app_.png";
 import clonner from "../../../public/projects_assets/clonnerboxd.web.app.webp";
 import umai from "../../../public/projects_assets/umai-restaurant.web.app.webp";
 import photo from "../../../public/projects_assets/PTAPP.webp";
-import battleships from "../../../public/projects_assets/howtoplay.gif";
+
 const projects = [
   {
     id: "socializer",
@@ -10,7 +10,7 @@ const projects = [
     description: [
       {
         id: "socializer-description-1",
-        text: "Enabled users to manage friendship, upload images and posts ",
+        text: "Enabled users to create posts, upload images, customize their profiles and manage friendships",
       },
       {
         id: "socializer-description-2",
@@ -55,15 +55,15 @@ const projects = [
     description: [
       {
         id: "clonnerboxd-description-1",
-        text: "As an avid film lover, I re-created a fully responsive clone of the popular social movie platform.",
+        text: "Replicated a popular social movie platform with a focus on responsiveness and UI/UX.",
       },
       {
         id: "clonnerboxd-description-2",
-        text: "Create an account or try the app from the demo one.",
+        text: "Enabled users to document watched movies, mark favorites and provide reviews to movies fetched from TMDB API ",
       },
       {
         id: "clonnerboxd-description-3",
-        text: "Search, save and review your favorite movies fetched from TMDB API.",
+        text: " Implemented user login using Google Authentication, alongside a demo account option",
       },
     ],
     tech: [

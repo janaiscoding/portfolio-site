@@ -18,7 +18,7 @@ const AnchorButton = ({
       href={idAnchor}
       rel="noreferrer"
       aria-labelledby={alt}
-      aria-label="Click this link to see the following section"
+      aria-label={`Click this for ${alt}`}
       className="flex items-center dark:bg-blue border-2 dark:text-white border-blue p-2 gap-2 hover-arrow hover:cursor-pointer"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
