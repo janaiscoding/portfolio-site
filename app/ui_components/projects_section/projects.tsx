@@ -1,24 +1,74 @@
-import socializer from "../../../public/projects_assets/socializerme.vercel.app_.png";
-import clonner from "../../../public/projects_assets/clonnerboxd.web.app.webp";
-import umai from "../../../public/projects_assets/umai-restaurant.web.app.webp";
-import photo from "../../../public/projects_assets/PTAPP.webp";
+import luxuria from "@/public/projects_assets/luxuria1.png";
+import socializer from "@/public/projects_assets/socializerme.vercel.app_.png";
+import clonner from "@/public/projects_assets/clonnerboxd.web.app.webp";
+//import umai from "@/public/projects_assets/umai-restaurant.web.app.webp";
+import photo from "@/public/projects_assets/PTAPP.webp";
 
 const projects = [
+  {
+    id: "luxuria",
+    title: "Luxuria Hotel",
+    description: [
+      {
+        id: "luxuria-description-1",
+        text: "A full stack Next.js hotel presentation website with accomodation booking services, focused on SSR, SEO and intuitive UI/UX",
+      },
+      {
+        id: "luxuria-description-2",
+        text: "Designed a robust, server-side secured RESTful API which users can use to manage their bookings",
+      },
+      {
+        id: "luxuria-description-3",
+        text: "Authentication sessions are handled with credentials (with hashed passwords) or OAuth integration by NextAuth.js",
+      },
+    ],
+    tech: [
+      {
+        id: "socializer-tech-1",
+        name: "TypeScript",
+      },
+      {
+        id: "socializer-tech-2",
+        name: "Next.js",
+      },
+      {
+        id: "socializer-tech-3",
+        name: "PostgreSQL",
+      },
+      {
+        id: "socializer-tech-4",
+        name: "React",
+      },
+      {
+        id: "socializer-tech-5",
+        name: "TailwindCSS",
+      },
+    ],
+    demoLink: "https://luxuria-hotel.vercel.app/",
+    repoLink: "https://github.com/janaiscoding/luxuria-hotel",
+    variant: "fromLeft",
+    image: luxuria,
+    translateY: "-1",
+  },
   {
     id: "socializer",
     title: "Socializer 🫶",
     description: [
       {
         id: "socializer-description-1",
-        text: "Enabled users to create posts, upload images, customize their profiles and manage friendships",
+        text: "Developed a full stack social platform that allows users to post texts and images, comment on and like posts, customize profiles and manage friendships",
       },
       {
         id: "socializer-description-2",
-        text: "Implemented a secure RESTful API, with JWT authentication and CRUD operations",
+        text: "Designed a robust RESTful API with full CRUD operations and JWT authentication for protecting routes",
       },
+      // {
+      //   id: "socializer-description-3",
+      //   text: "Increased the fetching speed by 90% by implementing a SaaS CDN for image manipulation",
+      // },
       {
-        id: "socializer-description-3",
-        text: "Enhanced the user and developer experience by integrating the React Context API and React Custom Hooks",
+        id: "socializer-description-4",
+        text: "Adhered to WCAG guidelines for accessibility, achieving a 95%+ Lighthouse score overall",
       },
     ],
     tech: [
@@ -90,43 +140,43 @@ const projects = [
     image: clonner,
     translateY: "70",
   },
-  {
-    id: "umai",
-    title: "Umaī Restaurant 🍣",
-    description: [
-      {
-        id: "umai-description-1",
-        text: "Umaī is a fictive asian restaurant with a shopping cart functionality.",
-      },
-      {
-        id: "umai-description-2",
-        text: "Add to cart, remove, subscribe to the newsletter for “25% discount” or book a “reservation”.",
-      },
-    ],
-    tech: [
-      {
-        id: "umai-tech-1",
-        name: "React",
-      },
-      {
-        id: "umai-tech-2",
-        name: "CSS3",
-      },
-      {
-        id: "umai-tech-3",
-        name: "TailwindCSS",
-      },
-      {
-        id: "umai-tech-4",
-        name: "Shopping Cart",
-      },
-    ],
-    demoLink: "https://umai-restaurant.web.app/",
-    repoLink: "https://github.com/janaiscoding/shopping-cart",
-    variant: "fromLeft",
-    image: umai,
-    translateY: "70",
-  },
+  // {
+  //   id: "umai",
+  //   title: "Umaī Restaurant 🍣",
+  //   description: [
+  //     {
+  //       id: "umai-description-1",
+  //       text: "Umaī is a fictive asian restaurant with a shopping cart functionality.",
+  //     },
+  //     {
+  //       id: "umai-description-2",
+  //       text: "Add to cart, remove, subscribe to the newsletter for “25% discount” or book a “reservation”.",
+  //     },
+  //   ],
+  //   tech: [
+  //     {
+  //       id: "umai-tech-1",
+  //       name: "React",
+  //     },
+  //     {
+  //       id: "umai-tech-2",
+  //       name: "CSS3",
+  //     },
+  //     {
+  //       id: "umai-tech-3",
+  //       name: "TailwindCSS",
+  //     },
+  //     {
+  //       id: "umai-tech-4",
+  //       name: "Shopping Cart",
+  //     },
+  //   ],
+  //   demoLink: "https://umai-restaurant.web.app/",
+  //   repoLink: "https://github.com/janaiscoding/shopping-cart",
+  //   variant: "fromLeft",
+  //   image: umai,
+  //   translateY: "70",
+  // },
   {
     id: "photo",
     title: "Historical Photo Tagging App 📸",
