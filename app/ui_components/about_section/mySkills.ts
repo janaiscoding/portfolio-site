@@ -10,6 +10,16 @@ export const mySkills = [
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
   },
   {
+    id: 4,
+    name: "React",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  },
+  {
+    id: 40,
+    name: "Next.js",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+  },
+  {
     id: 51,
     name: "NodeJS",
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
@@ -20,9 +30,9 @@ export const mySkills = [
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
   },
   {
-    id: 4,
-    name: "React",
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    id: 512,
+    name: "PostgreSQL",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
   },
   {
     id: 1,
@@ -45,11 +55,6 @@ export const mySkills = [
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
   },
 
-  // {
-  //   id: 8,
-  //   name: "Bootstrap",
-  //   url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
-  // },
   {
     id: 9,
     name: "Jest",
@@ -70,9 +75,4 @@ export const mySkills = [
     name: "Figma",
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
   },
-  // {
-  //   id: 13,
-  //   name: "Webpack",
-  //   url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg",
-  // }
 ];

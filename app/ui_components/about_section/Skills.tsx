@@ -39,7 +39,6 @@ const Skills = ({ inView }: { inView: boolean }) => {
       </h2>
       <div className="flex flex-wrap items-end self-end justify-start md:justify-end gap-2 md:gap-4">
         {allSkills}
-        <FramerMotion />
       </div>
       <div className="self-end font-poppins300 text-grey dark:text-white/90 text-sm mt-2">
         *Open to work with stuff not listed above
