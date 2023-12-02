@@ -61,7 +61,7 @@ const Header = () => {
           variants={fromTop}
           initial="hidden"
           animate="visible"
-          className="flex justify-between items-center max-w-6xl h-14 md:mx-auto px-6 md:px-2"
+          className="flex justify-between items-center max-w-7xl h-14 md:mx-auto px-6 md:px-2"
         >
           <div
             className={`font-overpass600 z-[500] ${

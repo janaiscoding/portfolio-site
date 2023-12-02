@@ -9,7 +9,7 @@ const Footer = () => {
   }, []);
   return (
     <footer className="">
-      <div className="flex justify-between items-center px-6 max-w-6xl h-20 md:mx-auto ">
+      <div className="flex justify-between items-center px-6 max-w-7xl h-20 md:mx-auto ">
         <div className="font-overpass600 text-xs md:text-base">
           © {year}. Made with 💙 by{" "}
           <span className="text-blue hover:text-orange hover:cursor-pointer">

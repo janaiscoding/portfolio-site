@@ -35,7 +35,7 @@ const About = () => {
       ref={ref}
     >
       <div className="flex flex-col gap-2">
-        <section className="flex flex-col gap-12 md:gap-6 px-6 md:flex-row md:justify-between md:max-w-6xl md:mx-auto md:gap-40 md:px-2 my-[5vh] md:my-[15vh]">
+        <section className="flex flex-col gap-12 md:gap-6 px-6 md:flex-row md:justify-between md:max-w-7xl md:mx-auto md:gap-40 md:px-2 my-[5vh] md:my-[15vh]">
           <motion.div
             animate={controls}
             variants={fromLeft}

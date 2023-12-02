@@ -7,11 +7,11 @@ import photo from "@/public/projects_assets/PTAPP.webp";
 const projects = [
   {
     id: "luxuria",
-    title: "Luxuria Hotel",
+    title: "Luxuria Hotel 🏨",
     description: [
       {
         id: "luxuria-description-1",
-        text: "A full stack Next.js hotel presentation website with accomodation booking services, focused on SSR, SEO and intuitive UI/UX",
+        text: "A full stack hotel presentation website with accomodation booking services, focused on SSR, SEO and intuitive UI/UX",
       },
       {
         id: "luxuria-description-2",
