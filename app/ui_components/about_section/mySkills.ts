@@ -15,9 +15,9 @@ export const mySkills = [
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
   {
-    id: 40,
-    name: "Next.js",
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    id: 5,
+    name: "Angular",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
   },
   {
     id: 51,
@@ -45,9 +45,9 @@ export const mySkills = [
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
   },
   {
-    id: 7,
-    name: "TailwindCSS",
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+    id: 71,
+    name: "SASS",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
   },
   {
     id: 6,
@@ -59,20 +59,5 @@ export const mySkills = [
     id: 9,
     name: "Jest",
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
-  },
-  {
-    id: 10,
-    name: "Firebase",
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
-  },
-  {
-    id: 11,
-    name: "VSCode",
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
-  },
-  {
-    id: 12,
-    name: "Figma",
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
   },
 ];

@@ -27,7 +27,7 @@ const HeroText = () => {
       </p>
       <h1 className="font-overpass600 text-5xl tracking-wide">Jana Istrate</h1>
       <p className="text-xl mb-10 mt-2 md:w-[80%]">
-        Results-driven developer who is passionate about creating smooth and
+        Results-driven frontend developer. Passionate about creating smooth and
         engaging web{" "}
         <span className="font-poppins500 underline-on-hover dark:text-brightblue dark:hover:text-black">
           experiences
