@@ -25,6 +25,7 @@ const config: Config = {
         black: "#222326",
         orange: "#ED7372",
         red: "#7e1010",
+        "darkBg": "#0F0F0F"
       },
       dropShadow: {
         xl: "0px 4px 10px rgba(45 138 164 / 0.5) ",

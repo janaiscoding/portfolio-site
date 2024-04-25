@@ -6,11 +6,10 @@ import Projects from "./portfolio_sections/Projects";
 import Contact from "./portfolio_sections/Contact";
 import Footer from "./navigation/Footer";
 import StickySocials from "./ui_components/StickySocials";
-import { useEffect, useState } from "react";
 
 export default function Home() {
   return (
-    <main className="px-4 md:px-6">
+    <main className="md:px-6">
       <Header />
       <Hero />
       <About />

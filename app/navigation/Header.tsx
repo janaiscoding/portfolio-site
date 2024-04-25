@@ -5,6 +5,7 @@ import { ThemeContext } from "../context/ThemeContext";
 import Sun from "../ui_components/icons/Sun";
 import Moon from "../ui_components/icons/Moon";
 import Hamburger from "../ui_components/icons/Hamburger";
+import { usePathname, useRouter } from "next/navigation";
 
 const fromTop = {
   visible: {
@@ -22,7 +23,10 @@ const fromTop = {
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [initialState, setInitialState] = useState(true);
+
   const themeContext = useContext(ThemeContext);
+  const router = useRouter();
+  const routeParams = usePathname();
 
   const handleMobileNav = () => {
     if (isOpen) {
@@ -32,6 +36,17 @@ const Header = () => {
       setInitialState(false);
     }
   };
+
+  const onClickLogo = () => {
+    if (routeParams !== "/") {
+      router.push("/");
+    }
+
+    window.scrollTo(0, 0);
+
+    setIsOpen(false);
+  };
+
   useEffect(() => {
     if (document.documentElement.classList.contains("dark")) {
       themeContext.setCurrent("dark");
@@ -67,10 +82,7 @@ const Header = () => {
             className={`font-overpass600 z-[500] ${
               isOpen ? "text-black" : "text-blue"
             } logo-link self-center text-3xl md:text-3xl tracking-wider align-baseline hover:cursor-pointer`}
-            onClick={() => {
-              window.scrollTo(0, 0);
-              setIsOpen(false);
-            }}
+            onClick={() => onClickLogo()}
           >
             {"{ J }"}
           </div>

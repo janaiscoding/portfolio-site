@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html {
+  background-color: var(--dark-bg);
+}
 :root {
   --blue: "#18728b";
   --grey: "#586565";
@@ -8,6 +11,7 @@
   --black: "#222326";
   --orange: "#ED7372";
   --red: "#7e1010";
+  --dark-bg: "#0F0F0F";
 }
 
 .underline-on-hover {
@@ -42,6 +46,7 @@
   -o-animation: showNav 0.8s ease forwards;
   animation: showNav 0.8s ease forwards;
 }
+
 @keyframes showNav {
   from {
     top: -100%;
