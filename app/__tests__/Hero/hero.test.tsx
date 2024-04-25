@@ -19,10 +19,12 @@ describe("Hero", () => {
     const heading = screen.getByRole("heading");
     expect(heading.textContent).toEqual("Jana Istrate");
   });
+
   it("Renders only one heading", () => {
     const heading = screen.getAllByRole("heading");
     expect(heading.length).toEqual(1);
   });
+
   it("Properly renders the profile image with alt text", () => {
     const image = screen.getByAltText(/portrait picture/i);
     expect(image).toBeInTheDocument();

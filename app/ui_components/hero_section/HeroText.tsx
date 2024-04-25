@@ -35,11 +35,7 @@ const HeroText = () => {
         for the users.
       </p>
 
-      <AnchorButton
-        content={"Contact me"}
-        idAnchor="#contact"
-        alt="Go to contact me section"
-      />
+      <AnchorButton content={"Contact me"} idAnchor="contact" />
     </motion.div>
   );
 };
