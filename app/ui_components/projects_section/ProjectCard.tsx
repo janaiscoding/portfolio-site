@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Button from "../Button";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { ProjectType } from "@/app/types/types";
+import { ProjectType } from "@/app/utils/types";
 import Image from "next/image";
 import { slideInFromLeft } from "@/app/animations/animations";
 

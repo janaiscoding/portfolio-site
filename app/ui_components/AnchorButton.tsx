@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ArrowIcon from "./icons/ArrowIcon";
-import { scrollToId } from "../service/scrollService";
+import { scrollToId } from "../utils/scrollService";
 
 const AnchorButton = ({
   content,

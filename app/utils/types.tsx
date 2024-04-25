@@ -5,6 +5,7 @@ type WatermarkProps = {
   top: string;
   left: string;
 };
+
 type ButtonProps = {
   content: string;
   linkTo: string;
@@ -15,6 +16,7 @@ type Description = {
   id: string;
   text: string;
 };
+
 type Tech = {
   id: string;
   name: string;
@@ -31,4 +33,5 @@ type ProjectType = {
   image: StaticImageData;
   translateY: string;
 };
+
 export type { WatermarkProps, ButtonProps, ProjectType };

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { WatermarkProps } from "../../types/types";
+import { WatermarkProps } from "../../utils/types";
 import { watermarkSlideInFromLeft } from "@/app/animations/animations";
 
 

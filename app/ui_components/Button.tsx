@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ButtonProps } from "../types/types";
+import { ButtonProps } from "../utils/types";
 import Image from "next/image";
 
 const Button = ({ content, linkTo, selector }: ButtonProps) => {
