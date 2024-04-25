@@ -9,26 +9,8 @@ import StickySocials from "./ui_components/StickySocials";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  // useEffect(() => {
-  //   if ("theme" in localStorage) {
-  //     document.documentElement.classList.add(localStorage.theme);
-  //   } else if (
-  //     !("theme" in localStorage) &&
-  //     window.matchMedia("(prefers-color-scheme: dark)").matches
-  //   ) {
-  //     localStorage.theme = "dark";
-  //     document.documentElement.classList.add("dark");
-  //   } else if (
-  //     !("theme" in localStorage) &&
-  //     !window.matchMedia("(prefers-color-scheme: dark)").matches
-  //   ) {
-  //     localStorage.theme = "light";
-  //     document.documentElement.classList.remove("dark");
-  //   }
-  //   //Remember user preferences
-  // }, []);
   return (
-    <main>
+    <main className="px-4 md:px-6">
       <Header />
       <Hero />
       <About />
