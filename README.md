@@ -1,12 +1,10 @@
-# Jana Istrate Personal Portfolio
+# My Personal Portfolio
 
-- See my personal portfolio here: [Live](https://www.janaistrate.com/).
+😉 See it in action 👉 [Live](https://www.janaistrate.com/)
 
-## Live Demo
+### Preview - Desktop
 
-### Preview
-
-![Preview personal portfolio - Desktop](</public/assets/www.janaistrate.com_%20(1).png>)
+![Preview personal portfolio - Desktop](/public/assets/portfolio-preview.png)
 
 ## Getting Started
 
@@ -21,15 +19,6 @@ npm run dev
 
 # Built with
 
-## Technologies
-
-- ReactJs, Javascript
+- ReactJS (NextJs), TypeScript, Jest
 - CSS3, TailwindCSS, Framer Motion
-- HTML5
-
-## Tools Used
-
-- Visual Studio Code
-- npm package manager
-- Linux Terminal
-- Git and Github
+- JSX, HTML
