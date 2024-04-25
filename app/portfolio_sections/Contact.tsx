@@ -12,7 +12,7 @@ const Contact = () => {
       <section className="md:pt-[5vh]">
         <div className="flex flex-col items-center px-6 md:px-2 w-full">
           <div className="flex items-center w-full">
-            <Separator isFullWidth={false} color="grey" />
+            <Separator isFullWidth={false} />
             <a
               href={"/#contact"}
               className="flex text-4xl font-overpass600 m-6"
@@ -20,7 +20,7 @@ const Contact = () => {
               <p className="text-orange">#</p>
               <h1 className="tracking-wide">Contact</h1>
             </a>
-            <Separator isFullWidth={false} color="grey" />
+            <Separator isFullWidth={false} />
           </div>
           <h1 className="text-base md:text-xl text-grey dark:text-white/90 font-overpass600 tracking-wider">
             Let&apos;s build{" "}
@@ -35,7 +35,7 @@ const Contact = () => {
             <ContactSocials />
           </div>
           <div className="flex items-center w-full">
-            <Separator isFullWidth={true} color="grey" />
+            <Separator isFullWidth={true} />
           </div>
         </div>
       </section>
