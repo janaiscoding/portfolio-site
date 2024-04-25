@@ -57,7 +57,7 @@ const Header = () => {
     <>
       <motion.header
         className={`sticky top-0 z-50 bg-white ${
-          isOpen ? "dark:bg-blue" : "dark:bg-[#0F0F0F]"
+          isOpen ? "dark:bg-blue" : "dark:bg-darkBg"
         } shadow-md`}
       >
         <motion.div

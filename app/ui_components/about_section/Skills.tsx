@@ -21,6 +21,7 @@ const Skills = ({ inView }: { inView: boolean }) => {
       variants={slideInFromRight}
       className="flex flex-col basis-full"
     >
+  
       <h2 className="text-2xl font-overpass600 tracking-wider text-grey dark:text-white/80 text-center md:text-end my-4 hover:cursor-default">
         MY SKILLS
       </h2>

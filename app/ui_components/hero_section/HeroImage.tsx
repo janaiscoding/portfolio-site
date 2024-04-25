@@ -33,17 +33,17 @@ const HeroImage = () => {
       animate={controls}
       variants={slideInFromRight}
       initial="hidden"
-      className="flex basis-full self-start justify-end relative"
+      className="relative flex basis-full self-center justify-end"
     >
       <Image
         src={Profile}
-        className="z-10"
+        className="z-10 border border-solid border-2 rounded-md border-orange dark:border-orange w-full md:w-[280px]"
         width={280}
         height={410}
-        alt="Jana Istrate frontend software developer portoflio portrait "
+        alt="Jana Istrate full-stack software developer portoflio portrait picture"
       />
       <div className="parallax-wrapper">
-        <div className="absolute contour after:border-2 after:border-blue after:w-[280px] after:h-[410px] after:absolute after:transform after:translate-y-6 after:-translate-x-[95%] after:-z-1"></div>
+        <div className="hidden md:block absolute contour after:border-2 after:rounded-md after:border-blue after:w-full md:after:w-[280px] after:h-[410px] after:absolute after:transform after:translate-y-6 after:-translate-x-[95%] after:-z-1"></div>
       </div>
     </motion.div>
   );

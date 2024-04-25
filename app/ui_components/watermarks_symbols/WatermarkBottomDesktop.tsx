@@ -2,17 +2,9 @@ import React, { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { WatermarkProps } from "../../types/types";
+import { watermarkSlideInFromRight } from "@/app/animations/animations";
 
-const fromRightWatermark = {
-  visible: {
-    x: 0,
-    transition: { duration: 1 },
-  },
-  hidden: {
-    x: 100,
-    transition: { duration: 1 },
-  },
-};
+
 
 const WatermarkBottomDesktop = ({ title }: { title: string }) => {
   const controls = useAnimation();
@@ -26,7 +18,7 @@ const WatermarkBottomDesktop = ({ title }: { title: string }) => {
       ref={ref}
       animate={controls}
       initial="hidden"
-      variants={fromRightWatermark}
+      variants={watermarkSlideInFromRight}
       className="mr-40 hidden md:block self-end font-overpass600 text-2xl text-black/20 dark:text-brightblue/20 overflow-hidden pointer-events-none"
     >
       {` <${title} />`}

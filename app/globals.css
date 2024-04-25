@@ -1,9 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html {
-  background-color: var(--dark-bg);
-}
+
 :root {
   --blue: "#18728b";
   --grey: "#586565";
@@ -11,7 +9,6 @@ html {
   --black: "#222326";
   --orange: "#ED7372";
   --red: "#7e1010";
-  --dark-bg: "#0F0F0F";
 }
 
 .underline-on-hover {

@@ -9,14 +9,16 @@ import StickySocials from "./ui_components/StickySocials";
 
 export default function Home() {
   return (
-    <main className="md:px-6">
+    <>
       <Header />
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
+      <main className="md:px-6">
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
+        <StickySocials />
+      </main>
       <Footer />
-      <StickySocials />
-    </main>
+    </>
   );
 }

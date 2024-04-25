@@ -21,11 +21,11 @@ const config: Config = {
         brightblue: "#66cae5",
         blue: "#18728b",
         grey: "#586565",
-        white: "#F8F7F7",
+        white: "#F0F0E8",
         black: "#222326",
         orange: "#ED7372",
         red: "#7e1010",
-        "darkBg": "#0F0F0F"
+        darkBg: "#111111",
       },
       dropShadow: {
         xl: "0px 4px 10px rgba(45 138 164 / 0.5) ",

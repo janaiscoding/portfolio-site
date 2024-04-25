@@ -6,6 +6,7 @@ import Skills from "../ui_components/about_section/Skills";
 import AboutMeText from "../ui_components/about_section/AboutMeText";
 import WatermarkBottomDesktop from "../ui_components/watermarks_symbols/WatermarkBottomDesktop";
 import { slideInFromLeft } from "../animations/animations";
+import Separator from "../ui_components/separator/Separator";
 
 const About = () => {
   const controls = useAnimation();

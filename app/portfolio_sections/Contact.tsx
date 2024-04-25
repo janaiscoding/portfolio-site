@@ -1,14 +1,18 @@
 import React from "react";
 import ContactMail from "../ui_components/contact_section/ContactMail";
 import ContactSocials from "../ui_components/contact_section/ContactSocials";
+import Separator from "../ui_components/separator/Separator";
 
 const Contact = () => {
   return (
-    <div className="contact overflow-hidden relative max-w-7xl m-auto" id="contact">
+    <div
+      className="contact overflow-hidden relative max-w-7xl m-auto"
+      id="contact"
+    >
       <section className="md:pt-[5vh]">
         <div className="flex flex-col items-center px-6 md:px-2 w-full">
           <div className="flex items-center w-full">
-            <div className="separator bg-grey/90"></div>
+            <Separator isFullWidth={false} color="grey" />
             <a
               href={"/#contact"}
               className="flex text-4xl font-overpass600 m-6"
@@ -16,7 +20,7 @@ const Contact = () => {
               <p className="text-orange">#</p>
               <h1 className="tracking-wide">Contact</h1>
             </a>
-            <div className="separator bg-grey/90"></div>
+            <Separator isFullWidth={false} color="grey" />
           </div>
           <h1 className="text-base md:text-xl text-grey dark:text-white/90 font-overpass600 tracking-wider">
             Let&apos;s build{" "}
@@ -31,7 +35,7 @@ const Contact = () => {
             <ContactSocials />
           </div>
           <div className="flex items-center w-full">
-            <div className="separator bg-grey/90"></div>
+            <Separator isFullWidth={true} color="grey" />
           </div>
         </div>
       </section>
