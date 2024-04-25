@@ -12,7 +12,7 @@ export default function NotFound() {
         variants={slideInFromLeft}
         initial="hidden"
         animate="visible"
-        className="min-h-[70vh] mx-auto px-6 gap-6 md:max-w-6xl flex flex-col justify-center items-center"
+        className="min-h-[70vh] mx-auto px-6 gap-6 flex flex-col justify-center items-center"
       >
         <h1 className="text-2xl md:text-4xl font-overpass600">
           Hmm. Seems you are on the wrong page somehow 🤔

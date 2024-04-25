@@ -6,11 +6,11 @@ import Separator from "../ui_components/separator/Separator";
 const Contact = () => {
   return (
     <div
-      className="contact overflow-hidden relative max-w-7xl m-auto"
+      className="contact overflow-hidden relative w-full"
       id="contact"
     >
       <section className="md:pt-[5vh]">
-        <div className="flex flex-col items-center px-6 md:px-2 w-full">
+        <div className="flex flex-col items-center md:px-2 w-full">
           <div className="flex items-center w-full">
             <Separator isFullWidth={false} />
             <a

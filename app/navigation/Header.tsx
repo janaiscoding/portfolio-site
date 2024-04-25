@@ -25,7 +25,7 @@ const Header = () => {
     }
   };
 
-  const onClickLogo = () => {
+  const onClickHome = () => {
     if (routeParams !== "/") {
       router.push("/");
     }
@@ -64,13 +64,13 @@ const Header = () => {
           variants={slideInFromTop}
           initial="hidden"
           animate="visible"
-          className="flex justify-between items-center max-w-7xl h-14 md:mx-auto px-6 md:px-2"
+          className="flex justify-between items-center max-w-7xl h-14 md:mx-auto px-6"
         >
           <div
             className={`font-overpass600 z-[500] ${
               isOpen ? "text-black" : "text-blue"
             } logo-link self-center text-3xl md:text-3xl tracking-wider align-baseline hover:cursor-pointer`}
-            onClick={() => onClickLogo()}
+            onClick={() => onClickHome()}
           >
             {"{ J }"}
           </div>
@@ -85,9 +85,7 @@ const Header = () => {
           {/* DESKTOP NAVBAR */}
           <nav className="hidden md:flex gap-9 font-overpass items-center justify-center text-md tracking-wider align-baseline hover:cursor-pointer">
             <button
-              onClick={() => {
-                window.scroll(0, 0);
-              }}
+              onClick={() => onClickHome()}
               className="nav-link"
               id="home-link"
             >

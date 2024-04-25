@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="md:px-6">
+      <main className="px-4 md:px-6 md:max-w-7xl m-auto flex flex-col gap-20">
         <Hero />
         <About />
         <Projects />

@@ -26,7 +26,7 @@ const Projects = () => {
       ref={ref}
     >
       <div className="flex flex-col gap-2">
-        <div className="flex flex-col gap-12 md:gap-6 md:justify-between md:max-w-7xl m-auto my-[5vh] p-6 md:p-2 md:my-[15vh]">
+        <div className="flex flex-col gap-12 md:gap-6 md:justify-between">
           <motion.div
             variants={slideInFromLeft}
             initial="hidden"
