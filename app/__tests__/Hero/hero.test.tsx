@@ -1,6 +1,8 @@
-import Hero from "@/app/portfolio_sections/Hero";
 import "@testing-library/jest-dom";
-import { render, screen } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
+import Hero from "@/app/portfolio_sections/Hero";
+import React from "react";
+
 
 describe("Hero", () => {
   beforeEach(() => {
@@ -12,6 +14,7 @@ describe("Hero", () => {
       disconnect: () => null,
     });
     window.IntersectionObserver = mockIntersectionObserver;
+
     render(<Hero />);
   });
 
@@ -29,4 +32,5 @@ describe("Hero", () => {
     const image = screen.getByAltText(/portrait picture/i);
     expect(image).toBeInTheDocument();
   });
+
 });
