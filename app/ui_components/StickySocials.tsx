@@ -1,25 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { slideInFromLeft } from "../animations/animations";
 
-const fromLeft = {
-  hidden: {
-    x: -100,
-    opacity: 0,
-  },
-  visible: {
-    x: 0,
-    opacity: 1,
-    transition: {
-      type: "easeIn",
-      duration: 1,
-    },
-  },
-};
 const StickySocials = () => {
   return (
     <motion.div
-      variants={fromLeft}
+      variants={slideInFromLeft}
       initial="hidden"
       animate="visible"
       className="hidden xl:flex flex-col gap-4 fixed top-[80%] p-3 left-[0%] socials bg-[#cdcdcd] dark:bg-blue"

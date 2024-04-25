@@ -3,22 +3,9 @@ import { useInView } from "react-intersection-observer";
 import { useAnimation, motion } from "framer-motion";
 import Heading from "../ui_components/Heading";
 import Skills from "../ui_components/about_section/Skills";
-import WatermarksAbout from "../ui_components/about_section/WatermarksAbout";
 import AboutMeText from "../ui_components/about_section/AboutMeText";
 import WatermarkBottomDesktop from "../ui_components/watermarks_symbols/WatermarkBottomDesktop";
-
-const fromLeft = {
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 1 },
-  },
-  hidden: {
-    x: -100,
-    opacity: 0,
-    transition: { duration: 1 },
-  },
-};
+import { slideInFromLeft } from "../animations/animations";
 
 const About = () => {
   const controls = useAnimation();
@@ -38,7 +25,7 @@ const About = () => {
         <section className="flex flex-col gap-12 md:gap-6 px-6 md:flex-row md:justify-between md:max-w-7xl md:mx-auto md:gap-40 md:px-2 my-[5vh] md:my-[15vh]">
           <motion.div
             animate={controls}
-            variants={fromLeft}
+            variants={slideInFromLeft}
             initial="hidden"
             className="basis-full"
           >

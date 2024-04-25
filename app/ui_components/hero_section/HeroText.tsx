@@ -1,8 +1,8 @@
 import AnchorButton from "../AnchorButton";
-import { fromLeft } from "../animations/animations";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { slideInFromLeft } from "@/app/animations/animations";
 
 const HeroText = () => {
   const controls = useAnimation();
@@ -19,7 +19,7 @@ const HeroText = () => {
       ref={ref}
       className="flex flex-col items-start justify-center tracking-wide basis-full"
       animate={controls}
-      variants={fromLeft}
+      variants={slideInFromLeft}
       initial="hidden"
     >
       <p className="text-blue text-xl tracking-tight dark:text-brightblue">

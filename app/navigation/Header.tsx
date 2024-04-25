@@ -6,19 +6,7 @@ import Sun from "../ui_components/icons/Sun";
 import Moon from "../ui_components/icons/Moon";
 import Hamburger from "../ui_components/icons/Hamburger";
 import { usePathname, useRouter } from "next/navigation";
-
-const fromTop = {
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 1 },
-  },
-  hidden: {
-    y: -100,
-    opacity: 0,
-    transition: { duration: 1 },
-  },
-};
+import { slideInFromTop } from "../animations/animations";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -73,7 +61,7 @@ const Header = () => {
         } shadow-md`}
       >
         <motion.div
-          variants={fromTop}
+          variants={slideInFromTop}
           initial="hidden"
           animate="visible"
           className="flex justify-between items-center max-w-7xl h-14 md:mx-auto px-6 md:px-2"

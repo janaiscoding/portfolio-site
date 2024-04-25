@@ -7,19 +7,7 @@ import WatermarkBottomDesktop from "../ui_components/watermarks_symbols/Watermar
 import WatermarkBottomMobile from "../ui_components/watermarks_symbols/WatermarkBottomMobile";
 import Button from "../ui_components/Button";
 import ProjectCard from "../ui_components/projects_section/ProjectCard";
-
-const fromLeft = {
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 1 },
-  },
-  hidden: {
-    x: -100,
-    opacity: 0,
-    transition: { duration: 1 },
-  },
-};
+import { slideInFromLeft } from "../animations/animations";
 
 const Projects = () => {
   const controls = useAnimation();
@@ -39,7 +27,11 @@ const Projects = () => {
     >
       <div className="flex flex-col gap-2">
         <div className="flex flex-col gap-12 md:gap-6 md:justify-between md:max-w-7xl m-auto my-[5vh] p-6 md:p-2 md:my-[15vh]">
-          <motion.div variants={fromLeft} initial="hidden" animate={controls}>
+          <motion.div
+            variants={slideInFromLeft}
+            initial="hidden"
+            animate={controls}
+          >
             <Heading title={"Projects"} linkTo={"/#projects"} />
             <h1 className="text-xl text-grey dark:text-white/90 font-overpass600">
               Follow my{" "}

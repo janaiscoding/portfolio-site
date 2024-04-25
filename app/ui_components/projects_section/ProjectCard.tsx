@@ -4,19 +4,7 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { ProjectType } from "@/app/types/types";
 import Image from "next/image";
-
-const fromLeft = {
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 1 },
-  },
-  hidden: {
-    x: -100,
-    opacity: 0,
-    transition: { duration: 1 },
-  },
-};
+import { slideInFromLeft } from "@/app/animations/animations";
 
 const ProjectCard = ({ project }: { project: ProjectType }) => {
   const controls = useAnimation();
@@ -33,7 +21,7 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
     <motion.div
       ref={ref}
       animate={controls}
-      variants={fromLeft}
+      variants={slideInFromLeft}
       initial="hidden"
       className="card flex flex-col-reverse gap-6 md:gap-0 md:flex-row p-4 md:p-6 h-[44rem] md:h-[30rem] lg:h-96 bg-slate-50 dark:bg-neutral-900 shadow-xl hover:shadow-2xl"
     >

@@ -1,10 +1,10 @@
 "use client";
 import { motion, AnimationControls, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { fromRight } from "../animations/animations";
 import Image from "next/image";
 import Profile from "../../../public/assets/jana-istrate.webp";
 import { useEffect } from "react";
+import { slideInFromRight } from "@/app/animations/animations";
 
 const HeroImage = () => {
   const controls = useAnimation();
@@ -31,7 +31,7 @@ const HeroImage = () => {
     <motion.div
       ref={ref}
       animate={controls}
-      variants={fromRight}
+      variants={slideInFromRight}
       initial="hidden"
       className="flex basis-full self-start justify-end relative"
     >
