@@ -8,6 +8,7 @@ import Navigation from "./header/Navigation";
 import ThemeIcon from "./header/ThemeIconSetter";
 import HeaderLogo from "./header/HeaderLogo";
 import NavigationSm from "./header/NavigationSm";
+import CloseIcon from "../ui_components/icons/CloseIcon";
 
 // Was reworked
 const Header = () => {
@@ -51,7 +52,11 @@ const Header = () => {
 
         <div className="md:hidden flex gap-4">
           <ThemeIcon />
-          <Hamburger onClick={() => setShowSmHeader(!showSmHeader)} />
+          {showSmHeader ? (
+            <CloseIcon onClick={() => setShowSmHeader(!showSmHeader)} />
+          ) : (
+            <Hamburger onClick={() => setShowSmHeader(!showSmHeader)} />
+          )}
         </div>
 
         <Navigation onClickHome={onClickHome} />

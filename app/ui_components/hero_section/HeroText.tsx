@@ -1,10 +1,7 @@
-import AnchorButton from "../AnchorButton";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { slideInFromLeft } from "@/app/animations/animations";
-import Image from "next/image";
-import ContactSocials from "../contact_section/ContactSocials";
 
 const HeroText = () => {
   const controls = useAnimation();
@@ -36,7 +33,6 @@ const HeroText = () => {
         </span>{" "}
         for the users.
       </p>
-      {/*  <AnchorButton content={"Contact me"} idAnchor="contact" /> */}
 
       <div className="flex gap-4 md:self-start self-center">
         <a
