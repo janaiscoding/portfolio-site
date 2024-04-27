@@ -4,7 +4,7 @@ import React from "react";
 const ContactSocials = () => {
   return (
     <div className="flex flex-col items-center gap-2">
-      <h1 className="text-grey dark:text-white/90 font-overpass">
+      <h1 className="text-grey text-lg dark:text-white/90 font-overpass">
         Reach me through social media:
       </h1>
       <div className="flex gap-6">

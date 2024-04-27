@@ -22,7 +22,7 @@ const Contact = () => {
             </a>
             <Separator isFullWidth={false} />
           </div>
-          <h1 className="text-base md:text-xl text-grey dark:text-white/90 font-overpass600 tracking-wider">
+          <h1 className="text-3xl text-grey dark:text-white/90 font-overpass600 tracking-wider text-center">
             Let&apos;s build{" "}
             <span className="font-poppins500 text-blue dark:text-white dark:hover:text-black underline-on-hover">
               awesome
