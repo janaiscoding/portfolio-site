@@ -8,11 +8,19 @@ const ThemeIconSetter = () => {
 
   const handleThemeToggle = () => {
     if (themeContext.current === "dark") {
+      // remove dark
       document.documentElement.classList.remove("dark");
+      // set light
+      document.documentElement.classList.add("light");
       themeContext.setCurrent("light");
+      localStorage.setItem("theme", "light");
     } else {
+      // remove light
+      document.documentElement.classList.remove("light");
+      //set dark
       document.documentElement.classList.add("dark");
       themeContext.setCurrent("dark");
+      localStorage.setItem("theme", "dark");
     }
   };
 

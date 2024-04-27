@@ -11,13 +11,31 @@ import Hero from "./app_sections/Hero";
 
 export default function Home() {
   const themeContext = useContext(ThemeContext);
-  // TODO: system preference
+  const localStorageTheme = localStorage.getItem("theme");
+
   useEffect(() => {
-    if (document.documentElement.classList.contains("dark")) {
-      themeContext.setCurrent("dark");
-    } else {
-      themeContext.setCurrent("light");
+    // If theme is not set already, check system preferences and set initial
+    if (!localStorageTheme) {
+      let currentTheme;
+      const isDark = window.matchMedia("(prefers-color-scheme:dark)").matches;
+      if (isDark) {
+        currentTheme = "dark";
+        document.documentElement.classList.add(currentTheme);
+        localStorage.setItem("theme", currentTheme);
+      } else {
+        currentTheme = "light";
+        document.documentElement.classList.add(currentTheme);
+        localStorage.setItem("theme", currentTheme);
+      }
+      themeContext.setCurrent(currentTheme);
     }
+
+    // Add based on previous preferences
+    if (localStorageTheme) {
+      document.documentElement.classList.add(localStorageTheme);
+      themeContext.setCurrent(localStorageTheme);
+    }
+    
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

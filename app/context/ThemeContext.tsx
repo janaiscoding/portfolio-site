@@ -17,7 +17,7 @@ export const ThemeContext = createContext<ThemeContextType>(
 export const ThemeContextProvider = ({
   children,
 }: ThemeContextProviderProps) => {
-  const [current, setCurrent] = useState("dark"); // Always defaulted to dark.
+  const [current, setCurrent] = useState("");
   return (
     <ThemeContext.Provider value={{ current, setCurrent }}>
       {children}

@@ -62,10 +62,10 @@ const projects = [
         id: "socializer-description-2",
         text: "RESTful API with full CRUD operations and JWT authentication",
       },
-      {
-        id: "socializer-description-3",
-        text: "Increased fetching speed by 90% by integrating a SaaS CDN",
-      },
+      // {
+      //   id: "socializer-description-3",
+      //   text: "Increased fetching speed by 90% by integrating a SaaS CDN",
+      // },
       {
         id: "socializer-description-4",
         text: "Adhered to WCAG guidelines for a11y, with a 95%+ Lighthouse score",
