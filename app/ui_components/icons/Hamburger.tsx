@@ -1,4 +1,4 @@
-const Hamburger = () => {
+const Hamburger = ({ onClick }: { onClick: () => void }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -7,6 +7,7 @@ const Hamburger = () => {
       strokeWidth={1.5}
       stroke="currentColor"
       className="w-6 h-6"
+      onClick={onClick}
     >
       <path
         strokeLinecap="round"
@@ -17,4 +18,4 @@ const Hamburger = () => {
   );
 };
 
-export default Hamburger
+export default Hamburger;

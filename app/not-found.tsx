@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { slideInFromLeft } from "./animations/animations";
-import Header from "./navigation/Header";
+import Header from "./navigation/header/Header";
 
 export default function NotFound() {
   return (
