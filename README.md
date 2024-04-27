@@ -4,7 +4,7 @@
 
 ### Preview - Desktop
 
-![Preview personal portfolio - Desktop](/public/assets/portfolio-preview.png)
+![Preview personal portfolio - Desktop](/public/assets/preview-porfolio-3.png)
 
 ## Getting Started
 
