@@ -7,7 +7,6 @@ const ThemeIconSetter = () => {
   const themeContext = useContext(ThemeContext);
 
   const handleThemeToggle = () => {
-    console.log('handle theme toggle')
     if (themeContext.current === "dark") {
       document.documentElement.classList.remove("dark");
       themeContext.setCurrent("light");
