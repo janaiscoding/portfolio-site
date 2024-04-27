@@ -17,7 +17,7 @@ const WatermarkTopDesktop = ({ title }: { title: string }) => {
       animate={controls}
       initial="hidden"
       variants={watermarkSlideInFromLeft}
-      className="ml-40 hidden md:block font-overpass600 md:text-2xl text-black/20 dark:text-brightblue/20 overflow-hidden pointer-events-none"
+      className="ml-40 hidden md:block font-overpass600 md:text-2xl text-black/20 dark:text-brightblue/20 pointer-events-none"
     >
       {` <${title}>`}
     </motion.div>

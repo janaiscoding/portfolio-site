@@ -1,5 +1,5 @@
-import ThemeIcon from "../ThemeIconSetter";
-import { linksData } from "../navLinksData";
+import ThemeIcon from "./ThemeIconSetter";
+import { linksData } from "./navLinksData";
 
 const Navigation = ({ onClickHome }: { onClickHome: () => void }) => {
   return (
@@ -13,7 +13,12 @@ const Navigation = ({ onClickHome }: { onClickHome: () => void }) => {
         </button>
         {linksData.map((link) => (
           <li key={link.id} className="header__link">
-            <a href={`/${link.href}`}>{link.title}</a>
+            <a
+              target={link.href.includes("#") ? "_self" : "_blank"}
+              href={`/${link.href}`}
+            >
+              {link.title}
+            </a>
           </li>
         ))}
       </ol>

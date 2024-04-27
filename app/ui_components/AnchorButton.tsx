@@ -19,7 +19,7 @@ const AnchorButton = ({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <p className={`font-poppins300 text-base tracking-tight`}>{content}</p>
+      <p className={`font-poppins300 text-2xl tracking-tight`}>{content}</p>
       <div className={`w-max h-max hover-arrow ${hovered && "animate-wiggle"}`}>
         <ArrowIcon />
       </div>

@@ -1,14 +1,15 @@
 "use client";
 import React, { useState, useRef, useEffect, RefObject } from "react";
 import { motion } from "framer-motion";
-import Hamburger from "../../ui_components/icons/Hamburger";
+import Hamburger from "../ui_components/icons/Hamburger";
 import { usePathname, useRouter } from "next/navigation";
-import { slideInFromTop } from "../../animations/animations";
-import Navigation from "./Navigation";
-import ThemeIcon from "../ThemeIconSetter";
-import HeaderLogo from "./HeaderLogo";
-import NavigationSm from "./NavigationSm";
+import { slideInFromTop } from "../animations/animations";
+import Navigation from "./header/Navigation";
+import ThemeIcon from "./header/ThemeIconSetter";
+import HeaderLogo from "./header/HeaderLogo";
+import NavigationSm from "./header/NavigationSm";
 
+// Was reworked
 const Header = () => {
   const [showSmHeader, setShowSmHeader] = useState(false);
   const ref = useRef<any>(null);

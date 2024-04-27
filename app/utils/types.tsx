@@ -34,4 +34,4 @@ type ProjectType = {
   translateY: string;
 };
 
-export type { WatermarkProps, ButtonProps, ProjectType };
+export type { WatermarkProps, ButtonProps, ProjectType, Description, Tech };

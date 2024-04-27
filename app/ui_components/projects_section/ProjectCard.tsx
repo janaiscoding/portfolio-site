@@ -5,6 +5,8 @@ import { useInView } from "react-intersection-observer";
 import { ProjectType } from "@/app/utils/types";
 import Image from "next/image";
 import { slideInFromLeft } from "@/app/animations/animations";
+import ProjectDetails from "./ProjectDetails";
+import ProjectTech from "./ProjectTech";
 
 const ProjectCard = ({ project }: { project: ProjectType }) => {
   const controls = useAnimation();
@@ -26,7 +28,7 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
       className="card flex flex-col-reverse gap-6 md:gap-0 md:flex-row p-4 md:p-6 h-[44rem] md:h-[30rem] lg:h-96 bg-slate-50 dark:bg-neutral-900 shadow-xl hover:shadow-2xl"
     >
       <div className="card-content flex flex-col justify-between items-start border-solid border-grey/90 md:border-r basis-full">
-        <div>
+        <div className="w-full">
           <a
             target="_blank"
             rel="noreferrer"
@@ -35,18 +37,8 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
           >
             {project.title}
           </a>
-          <ul className="flex ul-tech text-grey dark:text-white/70 text-base gap-1 flex-wrap md:text-lg font-poppins500 mt-2">
-            {project.tech.map((tech) => (
-              <li key={tech.id}>{tech.name}</li>
-            ))}
-          </ul>
-          <ul className="font-poppins my-4">
-            {project.description.map((detail) => (
-              <li key={detail.id} className="flex gap-4 items-center">
-                <p className="basis-11/12"> <span className="text-blue">•</span> {detail.text}</p>
-              </li>
-            ))}
-          </ul>
+          <ProjectTech techList={project.tech} />
+          <ProjectDetails descriptionList={project.description} />
         </div>
 
         <div className="flex self-center md:self-start gap-9">

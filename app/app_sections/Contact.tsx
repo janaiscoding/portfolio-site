@@ -6,7 +6,7 @@ import Separator from "../ui_components/separator/Separator";
 const Contact = () => {
   return (
     <div
-      className="contact overflow-hidden relative w-full"
+      className="contact relative w-full"
       id="contact"
     >
       <section className="md:pt-[5vh]">

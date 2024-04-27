@@ -1,4 +1,4 @@
-import { linksData } from "../navLinksData";
+import { linksData } from "./navLinksData";
 
 const NavigationSm = ({
   onClickHome,

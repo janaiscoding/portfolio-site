@@ -11,15 +11,15 @@ const projects = [
     description: [
       {
         id: "luxuria-description-1",
-        text: "A full stack hotel presentation website with accomodation booking services, focused on SSR, SEO and intuitive UI/UX",
+        text: "Full stack hotel website with accomodation booking services",
       },
       {
         id: "luxuria-description-2",
-        text: "Designed a robust, server-side secured RESTful API which users can use to manage their bookings",
+        text: "Designed a robust and secure RESTful API for users and bookings",
       },
       {
         id: "luxuria-description-3",
-        text: "Authentication sessions are handled with credentials (with hashed passwords) or OAuth integration by NextAuth.js",
+        text: "Authentication sessions are handled with credentials or OAuth",
       },
     ],
     tech: [
@@ -56,19 +56,19 @@ const projects = [
     description: [
       {
         id: "socializer-description-1",
-        text: "Developed a full stack social platform that allows users to post texts and images, comment on and like posts, customize profiles and manage friendships",
+        text: "Full stack social platform, with profiles and manage friendships",
       },
       {
         id: "socializer-description-2",
-        text: "Designed a robust RESTful API with full CRUD operations and JWT authentication for protecting routes",
+        text: "RESTful API with full CRUD operations and JWT authentication",
       },
-      // {
-      //   id: "socializer-description-3",
-      //   text: "Increased the fetching speed by 90% by implementing a SaaS CDN for image manipulation",
-      // },
+      {
+        id: "socializer-description-3",
+        text: "Increased fetching speed by 90% by integrating a SaaS CDN",
+      },
       {
         id: "socializer-description-4",
-        text: "Adhered to WCAG guidelines for accessibility, achieving a 95%+ Lighthouse score overall",
+        text: "Adhered to WCAG guidelines for a11y, with a 95%+ Lighthouse score",
       },
     ],
     tech: [
@@ -105,15 +105,15 @@ const projects = [
     description: [
       {
         id: "clonnerboxd-description-1",
-        text: "Replicated a popular social movie platform with a focus on responsiveness and UI/UX.",
+        text: "Replicated a popular social movie platform with a focus on responsiveness and UI/UX",
       },
       {
         id: "clonnerboxd-description-2",
-        text: "Enabled users to document watched movies, mark favorites and provide reviews to movies fetched from TMDB API ",
+        text: "Mark as favorite, watched or write reviews to movies fetched from TMDB API",
       },
       {
         id: "clonnerboxd-description-3",
-        text: " Implemented user login using Google Authentication, alongside a demo account option",
+        text: "Implemented user login using Google Authentication (also demo)",
       },
     ],
     tech: [
@@ -183,15 +183,15 @@ const projects = [
     description: [
       {
         id: "photo-description-1",
-        text: "A Find Waldo-like game set inside the chinese painting “Discussing the Divine Comedy with Dante”.",
+        text: "Find Waldo-like game set within the paiting “Discussing the Divine Comedy with Dante”",
       },
       {
         id: "photo-description-2",
-        text: "Global sorted leaderboard based on user timers implemented through Firebase DB.",
+        text: "Global leaderboard based on time-score implemented with Firebase DB",
       },
       {
         id: "photo-description-3",
-        text: "Find all 3 targets and save your score, see how fast you can be!",
+        text: "Find all 3 targets and save your score, see how fast you can be ;)",
       },
     ],
     tech: [

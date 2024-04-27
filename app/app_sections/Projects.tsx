@@ -8,6 +8,7 @@ import WatermarkBottomMobile from "../ui_components/watermarks_symbols/Watermark
 import Button from "../ui_components/Button";
 import ProjectCard from "../ui_components/projects_section/ProjectCard";
 import { slideInFromLeft } from "../animations/animations";
+import ProjectsTitle from "../ui_components/projects_section/ProjectsTitle";
 
 const Projects = () => {
   const controls = useAnimation();
@@ -21,7 +22,7 @@ const Projects = () => {
 
   return (
     <div
-      className="projects h-full overflow-hidden relative "
+      className="projects h-full scroll-mt-32 relative"
       id="projects"
       ref={ref}
     >
@@ -32,19 +33,9 @@ const Projects = () => {
             initial="hidden"
             animate={controls}
           >
-            <Heading title={"Projects"} linkTo={"/#projects"} />
-            <h1 className="text-xl text-grey dark:text-white/90 font-overpass600">
-              Follow my{" "}
-              <a
-                target="_blank"
-                href="https://www.github.com/janaiscoding"
-                className="text-blue hover:text-brightblue dark:text-brightblue dark:hover:text-blue"
-              >
-                GitHub
-              </a>{" "}
-              to see what I&apos;m currently working on!
-            </h1>
+            <ProjectsTitle />
           </motion.div>
+
           <div className="projects-wrapper flex flex-col gap-12">
             {projects.map((project) => (
               <ProjectCard key={project.id} project={project} />

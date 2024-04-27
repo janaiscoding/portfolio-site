@@ -33,7 +33,7 @@ const HeroImage = () => {
       animate={controls}
       variants={slideInFromRight}
       initial="hidden"
-      className="relative flex basis-full self-center justify-end"
+      className="relative flex basis-full self-center justify-end w-full"
     >
       <Image
         src={Profile}
