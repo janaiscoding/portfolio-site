@@ -11,9 +11,9 @@ import Hero from "./app_sections/Hero";
 
 export default function Home() {
   const themeContext = useContext(ThemeContext);
-  const localStorageTheme = localStorage.getItem("theme");
 
   useEffect(() => {
+    const localStorageTheme = localStorage.getItem("theme");
     // If theme is not set already, check system preferences and set initial
     if (!localStorageTheme) {
       let currentTheme;
@@ -35,7 +35,7 @@ export default function Home() {
       document.documentElement.classList.add(localStorageTheme);
       themeContext.setCurrent(localStorageTheme);
     }
-    
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
