@@ -24,10 +24,10 @@ const HeroText = () => {
       variants={slideInFromLeft}
       initial="hidden"
     >
-      <p className="text-blue text-3xl tracking-tight dark:text-brightblue">
+      <p className="text-blue text-2xl md:text-3xl tracking-tight dark:text-brightblue">
         👋 Hi, my name is
       </p>
-      <h1 className="font-overpass600 text-7xl tracking-wide">Jana Istrate</h1>
+      <h1 className="font-overpass600 text-5xl md:text-7xl tracking-wide">Jana Istrate</h1>
       <p className="text-2xl mb-10 mt-2 md:w-[80%]">
         Results-driven frontend developer. Passionate about creating smooth and
         engaging web{" "}
