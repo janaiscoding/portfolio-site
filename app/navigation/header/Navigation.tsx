@@ -11,8 +11,8 @@ const Navigation = ({ onClickHome }: { onClickHome: () => void }) => {
         >
           Home
         </button>
-        {linksData.map((link) => (
-          <li key={link.id} className="header__link">
+        {linksData.map((link, i) => (
+          <li key={i} className="header__link">
             <a
               target={link.href.includes("#") ? "_self" : "_blank"}
               href={`/${link.href}`}

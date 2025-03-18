@@ -1,10 +1,9 @@
 import React from "react";
-// import "./icon.css";
 import Image from "next/image";
 
-const Icon = ({ url, name }: { url: string; name: string }) => {
+const SkillIcon = ({ url, name }: { url: string; name: string }) => {
   return (
-    <div className="icon bg-[#cdcdcd] dark:bg-black hover:bg-blue text-black/80 hover:text-white dark:text-white/90 dark:hover:bg-blue hover:cursor-default">
+    <div className="icon bg-[#cdcdcd] dark:bg-black hover:bg-blue text-black/80 hover:text-white dark:text-white/90 dark:hover:bg-blue hover:cursor-default transition">
       <Image
         src={url}
         width={28}
@@ -16,4 +15,5 @@ const Icon = ({ url, name }: { url: string; name: string }) => {
     </div>
   );
 };
-export default Icon;
+
+export default SkillIcon;

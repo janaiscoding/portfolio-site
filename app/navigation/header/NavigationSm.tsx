@@ -19,9 +19,9 @@ const NavigationSm = ({
         >
           Home
         </button>
-        {linksData.map((link) => (
+        {linksData.map((link, i) => (
           <li
-            key={link.id}
+            key={i}
             className="p-6 text-right text-lg uppercase font-medium border-b border-blue/10 dark:border-white/10"
           >
             <a onClick={handleClose} href={`/${link.href}`}>

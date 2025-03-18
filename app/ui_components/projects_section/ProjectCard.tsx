@@ -25,7 +25,7 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
       animate={controls}
       variants={slideInFromLeft}
       initial="hidden"
-      className="card flex flex-col-reverse gap-6 md:gap-0 md:flex-row p-4 md:p-6 h-[44rem] md:h-[30rem] lg:h-96 bg-slate-50 dark:bg-neutral-900 shadow-xl hover:shadow-2xl"
+      className="card flex flex-col-reverse gap-6 md:gap-0 md:flex-row p-4 md:p-6 h-[44rem] md:h-[30rem] lg:h-96 bg-slate-50 dark:bg-neutral-900 shadow-md hover:shadow-xl transition"
     >
       <div className="card-content flex flex-col justify-between items-start border-solid border-grey/90 md:border-r basis-full">
         <div className="w-full">

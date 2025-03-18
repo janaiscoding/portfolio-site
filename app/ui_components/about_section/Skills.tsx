@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-import Icon from "./Icon";
 import { mySkills } from "./mySkills";
 import { useAnimation, motion } from "framer-motion";
 import { slideInFromRight } from "@/app/animations/animations";
+import SkillIcon from "./SkillIcon";
 
 const Skills = ({ inView }: { inView: boolean }) => {
-  const allSkills = mySkills.map((skill) => (
-    <Icon key={skill.id} url={skill.url} name={skill.name} />
+  const allSkills = mySkills.map((skill, i) => (
+    <SkillIcon key={i} url={skill.url} name={skill.name} />
   ));
   const controls = useAnimation();
   useEffect(() => {
@@ -21,7 +21,6 @@ const Skills = ({ inView }: { inView: boolean }) => {
       variants={slideInFromRight}
       className="flex flex-col basis-full"
     >
-  
       <h2 className="text-2xl font-overpass600 tracking-wider text-grey dark:text-white/80 text-center md:text-end my-4 hover:cursor-default">
         MY SKILLS
       </h2>

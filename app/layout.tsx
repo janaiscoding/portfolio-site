@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Overpass, Poppins } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 import { ThemeContextProvider } from "./context/ThemeContext";
 
 const poppins300 = Poppins({
@@ -45,6 +46,7 @@ export default function RootLayout({
         className={`${poppins300.variable} ${poppins400.variable} ${poppins500.variable} ${overpass600.variable} ${overpass.variable} font-sans bg-white text-black dark:text-white dark:bg-darkBg`}
       >
         <ThemeContextProvider>{children}</ThemeContextProvider>
+        <Analytics />
       </body>
     </html>
   );
